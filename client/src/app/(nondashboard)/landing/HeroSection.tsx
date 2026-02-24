@@ -26,24 +26,30 @@ const HeroSection = () => {
           process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN
         }&fuzzyMatch=true`
       );
+
       const data = await response.json();
-      if (data.features && data.features.length > 0) {
-        const [lng, lat] = data.features[0].center;
-        dispatch(
-          setFilters({
-            location: trimmedQuery,
-            coordinates: [lat, lng],
-          })
-        );
-        const params = new URLSearchParams({
+
+      if (!data?.features?.length) return;
+
+      const [lng, lat] = data.features[0].center;
+
+      /* Save filters correctly */
+      dispatch(
+        setFilters({
           location: trimmedQuery,
-          lat: lat.toString(),
-          lng: lng,
-        });
-        router.push(`/search?${params.toString()}`);
-      }
+          coordinates: [lng, lat], // IMPORTANT: lng first
+        })
+      );
+
+      /* Correct URL format used by your search page */
+      const params = new URLSearchParams({
+        location: trimmedQuery,
+        coordinates: `${lng},${lat}`,
+      });
+
+      router.push(`/search?${params.toString()}`);
     } catch (error) {
-      console.error("error search location:", error);
+      console.error("Error searching location:", error);
     }
   };
 
@@ -56,17 +62,20 @@ const HeroSection = () => {
         className="object-cover object-center"
         priority
       />
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+
+      <div className="absolute inset-0 bg-black/60"></div>
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="absolute top-1/3 transform -translate-x-1/2 -translate-y-1/2 text-center w-full"
+        className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full"
       >
         <div className="max-w-4xl mx-auto px-16 sm:px-12">
           <h1 className="text-5xl font-bold text-white mb-4">
             Start your journey to finding the perfect place to call home
           </h1>
+
           <p className="text-xl text-white mb-8">
             Explore our wide range of rental properties tailored to fit your
             lifestyle and needs!
@@ -80,6 +89,7 @@ const HeroSection = () => {
               placeholder="Search by city, neighborhood or address"
               className="w-full max-w-lg rounded-none rounded-l-xl border-none bg-white h-12"
             />
+
             <Button
               onClick={handleLocationSearch}
               className="bg-secondary-500 text-white rounded-none rounded-r-xl border-none hover:bg-secondary-600 h-12"
