@@ -27,13 +27,14 @@ export default function Map() {
       mapRef.current = null;
     }
 
-    const center =
-      Array.isArray(filters.coordinates) && filters.coordinates.length === 2
-        ? filters.coordinates
+    /* FIX #1 — tuple typing for production builds */
+    const center: [number, number] =
+      Array.isArray(filters?.coordinates) && filters.coordinates.length === 2
+        ? [filters.coordinates[0], filters.coordinates[1]]
         : [-74.5, 40];
 
     const map = new mapboxgl.Map({
-      container: mapContainerRef.current,
+      container: mapContainerRef.current!, // FIX #2 — prevent null crash
       style: "mapbox://styles/r-hithesh-reddy/cmlz9z86f000x01s77pyx705m",
       center,
       zoom: 9,
@@ -70,7 +71,6 @@ export default function Map() {
 function addMarkers(map: mapboxgl.Map, properties: Property[]) {
   const groups: Record<string, Property[]> = {};
 
-  // group by identical coordinates
   properties.forEach((p) => {
     const lng = p?.location?.coordinates?.longitude;
     const lat = p?.location?.coordinates?.latitude;
