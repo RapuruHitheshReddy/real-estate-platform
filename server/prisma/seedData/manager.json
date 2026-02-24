@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "cognitoId": "us-east-1:manager-0001",
+    "name": "Manager 1",
+    "email": "manager1@estate.com",
+    "phoneNumber": "+1 (555) 394-3784"
+  },
+  {
+    "id": 2,
+    "cognitoId": "us-east-1:manager-0002",
+    "name": "Manager 2",
+    "email": "manager2@estate.com",
+    "phoneNumber": "+1 (555) 496-6049"
+  },
+  {
+    "id": 3,
+    "cognitoId": "us-east-1:manager-0003",
+    "name": "Manager 3",
+    "email": "manager3@estate.com",
+    "phoneNumber": "+1 (555) 246-3470"
+  },
+  {
+    "id": 4,
+    "cognitoId": "us-east-1:manager-0004",
+    "name": "Manager 4",
+    "email": "manager4@estate.com",
+    "phoneNumber": "+1 (555) 754-4766"
+  },
+  {
+    "id": 5,
+    "cognitoId": "us-east-1:manager-0005",
+    "name": "Manager 5",
+    "email": "manager5@estate.com",
+    "phoneNumber": "+1 (555) 646-2182"
+  },
+  {
+    "id": 6,
+    "cognitoId": "us-east-1:manager-0006",
+    "name": "Manager 6",
+    "email": "manager6@estate.com",
+    "phoneNumber": "+1 (555) 564-6214"
+  },
+  {
+    "id": 7,
+    "cognitoId": "us-east-1:manager-0007",
+    "name": "Manager 7",
+    "email": "manager7@estate.com",
+    "phoneNumber": "+1 (555) 220-6420"
+  },
+  {
+    "id": 8,
+    "cognitoId": "us-east-1:manager-0008",
+    "name": "Manager 8",
+    "email": "manager8@estate.com",
+    "phoneNumber": "+1 (555) 368-5710"
+  },
+  {
+    "id": 9,
+    "cognitoId": "us-east-1:manager-0009",
+    "name": "Manager 9",
+    "email": "manager9@estate.com",
+    "phoneNumber": "+1 (555) 697-7285"
+  },
+  {
+    "id": 10,
+    "cognitoId": "us-east-1:manager-0010",
+    "name": "Manager 10",
+    "email": "manager10@estate.com",
+    "phoneNumber": "+1 (555) 663-1178"
+  },
+  {
+    "id": 11,
+    "cognitoId": "us-east-1:manager-0011",
+    "name": "Manager 11",
+    "email": "manager11@estate.com",
+    "phoneNumber": "+1 (555) 410-1158"
+  },
+  {
+    "id": 12,
+    "cognitoId": "us-east-1:manager-0012",
+    "name": "Manager 12",
+    "email": "manager12@estate.com",
+    "phoneNumber": "+1 (555) 704-1828"
+  },
+  {
+    "id": 13,
+    "cognitoId": "us-east-1:manager-0013",
+    "name": "Manager 13",
+    "email": "manager13@estate.com",
+    "phoneNumber": "+1 (555) 666-4972"
+  },
+  {
+    "id": 14,
+    "cognitoId": "us-east-1:manager-0014",
+    "name": "Manager 14",
+    "email": "manager14@estate.com",
+    "phoneNumber": "+1 (555) 246-9196"
+  },
+  {
+    "id": 15,
+    "cognitoId": "us-east-1:manager-0015",
+    "name": "Manager 15",
+    "email": "manager15@estate.com",
+    "phoneNumber": "+1 (555) 856-8441"
+  },
+  {
+    "id": 16,
+    "cognitoId": "us-east-1:manager-0016",
+    "name": "Manager 16",
+    "email": "manager16@estate.com",
+    "phoneNumber": "+1 (555) 828-5734"
+  },
+  {
+    "id": 17,
+    "cognitoId": "us-east-1:manager-0017",
+    "name": "Manager 17",
+    "email": "manager17@estate.com",
+    "phoneNumber": "+1 (555) 296-9551"
+  },
+  {
+    "id": 18,
+    "cognitoId": "us-east-1:manager-0018",
+    "name": "Manager 18",
+    "email": "manager18@estate.com",
+    "phoneNumber": "+1 (555) 327-5680"
+  },
+  {
+    "id": 19,
+    "cognitoId": "us-east-1:manager-0019",
+    "name": "Manager 19",
+    "email": "manager19@estate.com",
+    "phoneNumber": "+1 (555) 293-4282"
+  },
+  {
+    "id": 20,
+    "cognitoId": "us-east-1:manager-0020",
+    "name": "Manager 20",
+    "email": "manager20@estate.com",
+    "phoneNumber": "+1 (555) 407-1911"
+  },
+  {
+    "id": 21,
+    "cognitoId": "us-east-1:manager-0021",
+    "name": "Manager 21",
+    "email": "manager21@estate.com",
+    "phoneNumber": "+1 (555) 565-8964"
+  },
+  {
+    "id": 22,
+    "cognitoId": "us-east-1:manager-0022",
+    "name": "Manager 22",
+    "email": "manager22@estate.com",
+    "phoneNumber": "+1 (555) 887-7731"
+  },
+  {
+    "id": 23,
+    "cognitoId": "us-east-1:manager-0023",
+    "name": "Manager 23",
+    "email": "manager23@estate.com",
+    "phoneNumber": "+1 (555) 862-5393"
+  },
+  {
+    "id": 24,
+    "cognitoId": "us-east-1:manager-0024",
+    "name": "Manager 24",
+    "email": "manager24@estate.com",
+    "phoneNumber": "+1 (555) 726-6617"
+  },
+  {
+    "id": 25,
+    "cognitoId": "us-east-1:manager-0025",
+    "name": "Manager 25",
+    "email": "manager25@estate.com",
+    "phoneNumber": "+1 (555) 956-9647"
+  }
+]

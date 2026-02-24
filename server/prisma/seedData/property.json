@@ -1,0 +1,3203 @@
+[
+  {
+    "id": 1,
+    "name": "Modern Residence #1",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5244,
+    "securityDeposit": 5244,
+    "applicationFee": 82,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=1",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=1"
+    ],
+    "amenities": [
+      "WalkInClosets"
+    ],
+    "highlights": [
+      "RecentlyRenovated",
+      "DoubleVanities"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 3,
+    "baths": 1.1,
+    "squareFeet": 1014,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.114Z",
+    "averageRating": 3.3,
+    "numberOfReviews": 81,
+    "locationId": 1,
+    "managerCognitoId": "us-east-1:manager-0021"
+  },
+  {
+    "id": 2,
+    "name": "Modern Residence #2",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2405,
+    "securityDeposit": 2405,
+    "applicationFee": 92,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=2",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=2"
+    ],
+    "amenities": [
+      "Refrigerator",
+      "Gym",
+      "WalkInClosets"
+    ],
+    "highlights": [
+      "DoubleVanities",
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 2.4,
+    "squareFeet": 1083,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.117Z",
+    "averageRating": 4.7,
+    "numberOfReviews": 50,
+    "locationId": 2,
+    "managerCognitoId": "us-east-1:manager-0003"
+  },
+  {
+    "id": 3,
+    "name": "Modern Residence #3",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4967,
+    "securityDeposit": 4967,
+    "applicationFee": 46,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=3",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=3"
+    ],
+    "amenities": [
+      "Microwave",
+      "WasherDryer"
+    ],
+    "highlights": [
+      "CableReady",
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 2.8,
+    "squareFeet": 2316,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.117Z",
+    "averageRating": 3.7,
+    "numberOfReviews": 2,
+    "locationId": 3,
+    "managerCognitoId": "us-east-1:manager-0017"
+  },
+  {
+    "id": 4,
+    "name": "Modern Residence #4",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4037,
+    "securityDeposit": 4037,
+    "applicationFee": 94,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=4",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=4"
+    ],
+    "amenities": [
+      "HighSpeedInternet",
+      "Parking",
+      "Dishwasher",
+      "Gym"
+    ],
+    "highlights": [
+      "SatelliteTV",
+      "Heating"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 2,
+    "baths": 2.5,
+    "squareFeet": 2032,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.117Z",
+    "averageRating": 3.7,
+    "numberOfReviews": 101,
+    "locationId": 4,
+    "managerCognitoId": "us-east-1:manager-0020"
+  },
+  {
+    "id": 5,
+    "name": "Modern Residence #5",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2459,
+    "securityDeposit": 2459,
+    "applicationFee": 39,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=5",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=5"
+    ],
+    "amenities": [
+      "PetsAllowed",
+      "WalkInClosets",
+      "HardwoodFloors"
+    ],
+    "highlights": [
+      "AirConditioning"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 4,
+    "baths": 2.9,
+    "squareFeet": 735,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.117Z",
+    "averageRating": 4.1,
+    "numberOfReviews": 99,
+    "locationId": 5,
+    "managerCognitoId": "us-east-1:manager-0008"
+  },
+  {
+    "id": 6,
+    "name": "Modern Residence #6",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5134,
+    "securityDeposit": 5134,
+    "applicationFee": 40,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=6",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=6"
+    ],
+    "amenities": [
+      "Dishwasher",
+      "AirConditioning",
+      "Parking",
+      "Refrigerator",
+      "Pool"
+    ],
+    "highlights": [
+      "RecentlyRenovated",
+      "SmokeFree"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 1.4,
+    "squareFeet": 2426,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.118Z",
+    "averageRating": 3.3,
+    "numberOfReviews": 181,
+    "locationId": 6,
+    "managerCognitoId": "us-east-1:manager-0007"
+  },
+  {
+    "id": 7,
+    "name": "Modern Residence #7",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1700,
+    "securityDeposit": 1700,
+    "applicationFee": 78,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=7",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=7"
+    ],
+    "amenities": [
+      "WasherDryer"
+    ],
+    "highlights": [
+      "DoubleVanities"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 2,
+    "baths": 2.5,
+    "squareFeet": 630,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.118Z",
+    "averageRating": 3.1,
+    "numberOfReviews": 195,
+    "locationId": 7,
+    "managerCognitoId": "us-east-1:manager-0002"
+  },
+  {
+    "id": 8,
+    "name": "Modern Residence #8",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2581,
+    "securityDeposit": 2581,
+    "applicationFee": 37,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=8",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=8"
+    ],
+    "amenities": [
+      "Pool",
+      "WasherDryer",
+      "AirConditioning",
+      "WiFi",
+      "Gym"
+    ],
+    "highlights": [
+      "TubShower",
+      "AirConditioning",
+      "QuietNeighborhood"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 3,
+    "baths": 2.6,
+    "squareFeet": 1658,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.118Z",
+    "averageRating": 3.6,
+    "numberOfReviews": 126,
+    "locationId": 8,
+    "managerCognitoId": "us-east-1:manager-0010"
+  },
+  {
+    "id": 9,
+    "name": "Modern Residence #9",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3618,
+    "securityDeposit": 3618,
+    "applicationFee": 70,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=9",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=9"
+    ],
+    "amenities": [
+      "Refrigerator",
+      "WiFi",
+      "WasherDryer"
+    ],
+    "highlights": [
+      "DoubleVanities",
+      "CableReady"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 3,
+    "baths": 2.9,
+    "squareFeet": 819,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.118Z",
+    "averageRating": 4.7,
+    "numberOfReviews": 182,
+    "locationId": 9,
+    "managerCognitoId": "us-east-1:manager-0008"
+  },
+  {
+    "id": 10,
+    "name": "Modern Residence #10",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5765,
+    "securityDeposit": 5765,
+    "applicationFee": 96,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=10",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=10"
+    ],
+    "amenities": [
+      "Microwave",
+      "WalkInClosets",
+      "WasherDryer",
+      "Gym",
+      "HighSpeedInternet"
+    ],
+    "highlights": [
+      "Heating",
+      "CloseToTransit",
+      "SprinklerSystem"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 2,
+    "baths": 1.1,
+    "squareFeet": 723,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.118Z",
+    "averageRating": 3.2,
+    "numberOfReviews": 7,
+    "locationId": 10,
+    "managerCognitoId": "us-east-1:manager-0003"
+  },
+  {
+    "id": 11,
+    "name": "Modern Residence #11",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5154,
+    "securityDeposit": 5154,
+    "applicationFee": 88,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=11",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=11"
+    ],
+    "amenities": [
+      "WalkInClosets",
+      "HardwoodFloors",
+      "WiFi",
+      "Parking",
+      "WasherDryer"
+    ],
+    "highlights": [
+      "WasherDryer"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 2.1,
+    "squareFeet": 1055,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.118Z",
+    "averageRating": 3.9,
+    "numberOfReviews": 143,
+    "locationId": 11,
+    "managerCognitoId": "us-east-1:manager-0012"
+  },
+  {
+    "id": 12,
+    "name": "Modern Residence #12",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4128,
+    "securityDeposit": 4128,
+    "applicationFee": 96,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=12",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=12"
+    ],
+    "amenities": [
+      "HighSpeedInternet",
+      "Parking",
+      "WasherDryer"
+    ],
+    "highlights": [
+      "SatelliteTV",
+      "HighSpeedInternetAccess",
+      "SprinklerSystem"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 1.9,
+    "squareFeet": 1342,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.118Z",
+    "averageRating": 3,
+    "numberOfReviews": 190,
+    "locationId": 12,
+    "managerCognitoId": "us-east-1:manager-0015"
+  },
+  {
+    "id": 13,
+    "name": "Modern Residence #13",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4286,
+    "securityDeposit": 4286,
+    "applicationFee": 60,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=13",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=13"
+    ],
+    "amenities": [
+      "PetsAllowed"
+    ],
+    "highlights": [
+      "WasherDryer"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 1,
+    "baths": 2,
+    "squareFeet": 2120,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.118Z",
+    "averageRating": 4.6,
+    "numberOfReviews": 185,
+    "locationId": 13,
+    "managerCognitoId": "us-east-1:manager-0011"
+  },
+  {
+    "id": 14,
+    "name": "Modern Residence #14",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5926,
+    "securityDeposit": 5926,
+    "applicationFee": 43,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=14",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=14"
+    ],
+    "amenities": [
+      "Parking",
+      "PetsAllowed",
+      "WiFi"
+    ],
+    "highlights": [
+      "AirConditioning",
+      "WasherDryer",
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 1.7,
+    "squareFeet": 725,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.118Z",
+    "averageRating": 4.4,
+    "numberOfReviews": 183,
+    "locationId": 14,
+    "managerCognitoId": "us-east-1:manager-0016"
+  },
+  {
+    "id": 15,
+    "name": "Modern Residence #15",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5843,
+    "securityDeposit": 5843,
+    "applicationFee": 33,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=15",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=15"
+    ],
+    "amenities": [
+      "HardwoodFloors"
+    ],
+    "highlights": [
+      "HighSpeedInternetAccess",
+      "GreatView"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 2.9,
+    "squareFeet": 1149,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.118Z",
+    "averageRating": 3.5,
+    "numberOfReviews": 145,
+    "locationId": 15,
+    "managerCognitoId": "us-east-1:manager-0006"
+  },
+  {
+    "id": 16,
+    "name": "Modern Residence #16",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3786,
+    "securityDeposit": 3786,
+    "applicationFee": 30,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=16",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=16"
+    ],
+    "amenities": [
+      "AirConditioning"
+    ],
+    "highlights": [
+      "DoubleVanities",
+      "SmokeFree",
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 1,
+    "baths": 1.5,
+    "squareFeet": 2298,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.3,
+    "numberOfReviews": 193,
+    "locationId": 16,
+    "managerCognitoId": "us-east-1:manager-0017"
+  },
+  {
+    "id": 17,
+    "name": "Modern Residence #17",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4043,
+    "securityDeposit": 4043,
+    "applicationFee": 78,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=17",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=17"
+    ],
+    "amenities": [
+      "PetsAllowed"
+    ],
+    "highlights": [
+      "CloseToTransit",
+      "QuietNeighborhood"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 2,
+    "baths": 2.8,
+    "squareFeet": 2201,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.3,
+    "numberOfReviews": 47,
+    "locationId": 17,
+    "managerCognitoId": "us-east-1:manager-0008"
+  },
+  {
+    "id": 18,
+    "name": "Modern Residence #18",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2774,
+    "securityDeposit": 2774,
+    "applicationFee": 65,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=18",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=18"
+    ],
+    "amenities": [
+      "PetsAllowed",
+      "Parking",
+      "WasherDryer"
+    ],
+    "highlights": [
+      "QuietNeighborhood"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 2,
+    "baths": 1.2,
+    "squareFeet": 1859,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.3,
+    "numberOfReviews": 90,
+    "locationId": 18,
+    "managerCognitoId": "us-east-1:manager-0004"
+  },
+  {
+    "id": 19,
+    "name": "Modern Residence #19",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5833,
+    "securityDeposit": 5833,
+    "applicationFee": 41,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=19",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=19"
+    ],
+    "amenities": [
+      "Dishwasher",
+      "WasherDryer",
+      "WiFi",
+      "Microwave"
+    ],
+    "highlights": [
+      "GreatView"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 2,
+    "baths": 1.8,
+    "squareFeet": 2311,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.5,
+    "numberOfReviews": 86,
+    "locationId": 19,
+    "managerCognitoId": "us-east-1:manager-0012"
+  },
+  {
+    "id": 20,
+    "name": "Modern Residence #20",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3586,
+    "securityDeposit": 3586,
+    "applicationFee": 90,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=20",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=20"
+    ],
+    "amenities": [
+      "Refrigerator",
+      "HighSpeedInternet",
+      "Gym"
+    ],
+    "highlights": [
+      "Heating",
+      "QuietNeighborhood"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 1.7,
+    "squareFeet": 2467,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.8,
+    "numberOfReviews": 76,
+    "locationId": 20,
+    "managerCognitoId": "us-east-1:manager-0019"
+  },
+  {
+    "id": 21,
+    "name": "Modern Residence #21",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5765,
+    "securityDeposit": 5765,
+    "applicationFee": 48,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=21",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=21"
+    ],
+    "amenities": [
+      "PetsAllowed"
+    ],
+    "highlights": [
+      "GreatView",
+      "CloseToTransit",
+      "CableReady"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 1,
+    "baths": 1.5,
+    "squareFeet": 1299,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.1,
+    "numberOfReviews": 45,
+    "locationId": 21,
+    "managerCognitoId": "us-east-1:manager-0017"
+  },
+  {
+    "id": 22,
+    "name": "Modern Residence #22",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4716,
+    "securityDeposit": 4716,
+    "applicationFee": 80,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=22",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=22"
+    ],
+    "amenities": [
+      "Refrigerator",
+      "HardwoodFloors",
+      "Dishwasher",
+      "WiFi",
+      "WalkInClosets"
+    ],
+    "highlights": [
+      "CloseToTransit",
+      "WasherDryer"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 2.8,
+    "squareFeet": 1912,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.9,
+    "numberOfReviews": 36,
+    "locationId": 22,
+    "managerCognitoId": "us-east-1:manager-0018"
+  },
+  {
+    "id": 23,
+    "name": "Modern Residence #23",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3541,
+    "securityDeposit": 3541,
+    "applicationFee": 68,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=23",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=23"
+    ],
+    "amenities": [
+      "WiFi",
+      "WasherDryer",
+      "Pool"
+    ],
+    "highlights": [
+      "SatelliteTV"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 1.1,
+    "squareFeet": 1582,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.1,
+    "numberOfReviews": 121,
+    "locationId": 23,
+    "managerCognitoId": "us-east-1:manager-0006"
+  },
+  {
+    "id": 24,
+    "name": "Modern Residence #24",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5837,
+    "securityDeposit": 5837,
+    "applicationFee": 87,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=24",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=24"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "WalkInClosets",
+      "HighSpeedInternet",
+      "Dishwasher",
+      "Gym"
+    ],
+    "highlights": [
+      "SmokeFree",
+      "Heating"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 4,
+    "baths": 1.3,
+    "squareFeet": 1023,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.4,
+    "numberOfReviews": 197,
+    "locationId": 24,
+    "managerCognitoId": "us-east-1:manager-0008"
+  },
+  {
+    "id": 25,
+    "name": "Modern Residence #25",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3606,
+    "securityDeposit": 3606,
+    "applicationFee": 39,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=25",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=25"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "HardwoodFloors",
+      "Refrigerator"
+    ],
+    "highlights": [
+      "AirConditioning",
+      "GreatView"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 2,
+    "baths": 2.5,
+    "squareFeet": 826,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.9,
+    "numberOfReviews": 125,
+    "locationId": 25,
+    "managerCognitoId": "us-east-1:manager-0008"
+  },
+  {
+    "id": 26,
+    "name": "Modern Residence #26",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2678,
+    "securityDeposit": 2678,
+    "applicationFee": 82,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=26",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=26"
+    ],
+    "amenities": [
+      "Dishwasher",
+      "Parking"
+    ],
+    "highlights": [
+      "GreatView",
+      "SatelliteTV",
+      "QuietNeighborhood"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 2.7,
+    "squareFeet": 728,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.2,
+    "numberOfReviews": 173,
+    "locationId": 26,
+    "managerCognitoId": "us-east-1:manager-0013"
+  },
+  {
+    "id": 27,
+    "name": "Modern Residence #27",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5520,
+    "securityDeposit": 5520,
+    "applicationFee": 75,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=27",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=27"
+    ],
+    "amenities": [
+      "HighSpeedInternet"
+    ],
+    "highlights": [
+      "CableReady",
+      "DoubleVanities",
+      "Heating"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 3,
+    "baths": 2.2,
+    "squareFeet": 1919,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.1,
+    "numberOfReviews": 49,
+    "locationId": 27,
+    "managerCognitoId": "us-east-1:manager-0016"
+  },
+  {
+    "id": 28,
+    "name": "Modern Residence #28",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2414,
+    "securityDeposit": 2414,
+    "applicationFee": 32,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=28",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=28"
+    ],
+    "amenities": [
+      "WalkInClosets",
+      "HardwoodFloors",
+      "Dishwasher"
+    ],
+    "highlights": [
+      "TubShower",
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 2.6,
+    "squareFeet": 1525,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.1,
+    "numberOfReviews": 45,
+    "locationId": 28,
+    "managerCognitoId": "us-east-1:manager-0013"
+  },
+  {
+    "id": 29,
+    "name": "Modern Residence #29",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3234,
+    "securityDeposit": 3234,
+    "applicationFee": 69,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=29",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=29"
+    ],
+    "amenities": [
+      "Microwave",
+      "WasherDryer",
+      "WalkInClosets",
+      "PetsAllowed",
+      "Parking"
+    ],
+    "highlights": [
+      "DoubleVanities",
+      "CloseToTransit"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 4,
+    "baths": 1.8,
+    "squareFeet": 1196,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.3,
+    "numberOfReviews": 165,
+    "locationId": 29,
+    "managerCognitoId": "us-east-1:manager-0009"
+  },
+  {
+    "id": 30,
+    "name": "Modern Residence #30",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5875,
+    "securityDeposit": 5875,
+    "applicationFee": 38,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=30",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=30"
+    ],
+    "amenities": [
+      "Refrigerator",
+      "WasherDryer"
+    ],
+    "highlights": [
+      "CloseToTransit",
+      "TubShower",
+      "Intercom"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 1,
+    "baths": 1.3,
+    "squareFeet": 841,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.6,
+    "numberOfReviews": 162,
+    "locationId": 30,
+    "managerCognitoId": "us-east-1:manager-0004"
+  },
+  {
+    "id": 31,
+    "name": "Modern Residence #31",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2845,
+    "securityDeposit": 2845,
+    "applicationFee": 83,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=31",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=31"
+    ],
+    "amenities": [
+      "Parking",
+      "AirConditioning"
+    ],
+    "highlights": [
+      "CloseToTransit"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 2.3,
+    "squareFeet": 951,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.2,
+    "numberOfReviews": 33,
+    "locationId": 31,
+    "managerCognitoId": "us-east-1:manager-0022"
+  },
+  {
+    "id": 32,
+    "name": "Modern Residence #32",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1511,
+    "securityDeposit": 1511,
+    "applicationFee": 93,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=32",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=32"
+    ],
+    "amenities": [
+      "WalkInClosets"
+    ],
+    "highlights": [
+      "DoubleVanities",
+      "SatelliteTV"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 2.8,
+    "squareFeet": 1250,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.7,
+    "numberOfReviews": 200,
+    "locationId": 32,
+    "managerCognitoId": "us-east-1:manager-0020"
+  },
+  {
+    "id": 33,
+    "name": "Modern Residence #33",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5516,
+    "securityDeposit": 5516,
+    "applicationFee": 72,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=33",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=33"
+    ],
+    "amenities": [
+      "HighSpeedInternet",
+      "Refrigerator",
+      "Dishwasher",
+      "HardwoodFloors",
+      "AirConditioning"
+    ],
+    "highlights": [
+      "CloseToTransit"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 1.2,
+    "squareFeet": 1806,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.6,
+    "numberOfReviews": 163,
+    "locationId": 33,
+    "managerCognitoId": "us-east-1:manager-0017"
+  },
+  {
+    "id": 34,
+    "name": "Modern Residence #34",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1803,
+    "securityDeposit": 1803,
+    "applicationFee": 44,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=34",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=34"
+    ],
+    "amenities": [
+      "WiFi",
+      "Dishwasher"
+    ],
+    "highlights": [
+      "DoubleVanities"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 2.7,
+    "squareFeet": 2026,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.5,
+    "numberOfReviews": 89,
+    "locationId": 34,
+    "managerCognitoId": "us-east-1:manager-0014"
+  },
+  {
+    "id": 35,
+    "name": "Modern Residence #35",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5281,
+    "securityDeposit": 5281,
+    "applicationFee": 47,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=35",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=35"
+    ],
+    "amenities": [
+      "Microwave",
+      "PetsAllowed"
+    ],
+    "highlights": [
+      "Intercom"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 2.6,
+    "squareFeet": 1556,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.9,
+    "numberOfReviews": 182,
+    "locationId": 35,
+    "managerCognitoId": "us-east-1:manager-0021"
+  },
+  {
+    "id": 36,
+    "name": "Modern Residence #36",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 966,
+    "securityDeposit": 966,
+    "applicationFee": 72,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=36",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=36"
+    ],
+    "amenities": [
+      "Microwave",
+      "WalkInClosets",
+      "Pool",
+      "HardwoodFloors"
+    ],
+    "highlights": [
+      "CableReady",
+      "QuietNeighborhood",
+      "RecentlyRenovated"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 2.1,
+    "squareFeet": 1594,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.2,
+    "numberOfReviews": 121,
+    "locationId": 36,
+    "managerCognitoId": "us-east-1:manager-0001"
+  },
+  {
+    "id": 37,
+    "name": "Modern Residence #37",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4961,
+    "securityDeposit": 4961,
+    "applicationFee": 88,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=37",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=37"
+    ],
+    "amenities": [
+      "HighSpeedInternet",
+      "Dishwasher",
+      "PetsAllowed",
+      "Gym",
+      "Microwave"
+    ],
+    "highlights": [
+      "CloseToTransit",
+      "Heating"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 2.8,
+    "squareFeet": 1690,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.2,
+    "numberOfReviews": 164,
+    "locationId": 37,
+    "managerCognitoId": "us-east-1:manager-0018"
+  },
+  {
+    "id": 38,
+    "name": "Modern Residence #38",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4456,
+    "securityDeposit": 4456,
+    "applicationFee": 93,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=38",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=38"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "HardwoodFloors",
+      "PetsAllowed",
+      "HighSpeedInternet",
+      "AirConditioning"
+    ],
+    "highlights": [
+      "SprinklerSystem"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 1.8,
+    "squareFeet": 2101,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4,
+    "numberOfReviews": 172,
+    "locationId": 38,
+    "managerCognitoId": "us-east-1:manager-0015"
+  },
+  {
+    "id": 39,
+    "name": "Modern Residence #39",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4251,
+    "securityDeposit": 4251,
+    "applicationFee": 81,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=39",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=39"
+    ],
+    "amenities": [
+      "Parking",
+      "Refrigerator",
+      "WasherDryer",
+      "Pool"
+    ],
+    "highlights": [
+      "DoubleVanities",
+      "Heating"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 2.4,
+    "squareFeet": 1902,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.2,
+    "numberOfReviews": 124,
+    "locationId": 39,
+    "managerCognitoId": "us-east-1:manager-0014"
+  },
+  {
+    "id": 40,
+    "name": "Modern Residence #40",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4241,
+    "securityDeposit": 4241,
+    "applicationFee": 47,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=40",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=40"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "HardwoodFloors"
+    ],
+    "highlights": [
+      "HighSpeedInternetAccess",
+      "Heating"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 2.1,
+    "squareFeet": 1812,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.9,
+    "numberOfReviews": 111,
+    "locationId": 40,
+    "managerCognitoId": "us-east-1:manager-0006"
+  },
+  {
+    "id": 41,
+    "name": "Modern Residence #41",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2406,
+    "securityDeposit": 2406,
+    "applicationFee": 41,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=41",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=41"
+    ],
+    "amenities": [
+      "Microwave",
+      "HardwoodFloors",
+      "Refrigerator"
+    ],
+    "highlights": [
+      "Intercom",
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 1.3,
+    "squareFeet": 1639,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.1,
+    "numberOfReviews": 163,
+    "locationId": 41,
+    "managerCognitoId": "us-east-1:manager-0025"
+  },
+  {
+    "id": 42,
+    "name": "Modern Residence #42",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2613,
+    "securityDeposit": 2613,
+    "applicationFee": 30,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=42",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=42"
+    ],
+    "amenities": [
+      "Parking"
+    ],
+    "highlights": [
+      "AirConditioning"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 3,
+    "baths": 1.5,
+    "squareFeet": 705,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.4,
+    "numberOfReviews": 178,
+    "locationId": 42,
+    "managerCognitoId": "us-east-1:manager-0008"
+  },
+  {
+    "id": 43,
+    "name": "Modern Residence #43",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1451,
+    "securityDeposit": 1451,
+    "applicationFee": 64,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=43",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=43"
+    ],
+    "amenities": [
+      "Parking",
+      "WasherDryer",
+      "HardwoodFloors"
+    ],
+    "highlights": [
+      "WasherDryer",
+      "Intercom"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 4,
+    "baths": 1.8,
+    "squareFeet": 1045,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.6,
+    "numberOfReviews": 151,
+    "locationId": 43,
+    "managerCognitoId": "us-east-1:manager-0008"
+  },
+  {
+    "id": 44,
+    "name": "Modern Residence #44",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3596,
+    "securityDeposit": 3596,
+    "applicationFee": 65,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=44",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=44"
+    ],
+    "amenities": [
+      "Pool",
+      "Gym",
+      "WiFi",
+      "WasherDryer",
+      "PetsAllowed"
+    ],
+    "highlights": [
+      "WasherDryer",
+      "GreatView"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 2,
+    "baths": 1.5,
+    "squareFeet": 1086,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.4,
+    "numberOfReviews": 15,
+    "locationId": 44,
+    "managerCognitoId": "us-east-1:manager-0019"
+  },
+  {
+    "id": 45,
+    "name": "Modern Residence #45",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2399,
+    "securityDeposit": 2399,
+    "applicationFee": 99,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=45",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=45"
+    ],
+    "amenities": [
+      "AirConditioning",
+      "Parking",
+      "PetsAllowed",
+      "Dishwasher"
+    ],
+    "highlights": [
+      "RecentlyRenovated",
+      "CableReady"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 1.1,
+    "squareFeet": 1004,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.8,
+    "numberOfReviews": 7,
+    "locationId": 45,
+    "managerCognitoId": "us-east-1:manager-0005"
+  },
+  {
+    "id": 46,
+    "name": "Modern Residence #46",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3448,
+    "securityDeposit": 3448,
+    "applicationFee": 96,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=46",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=46"
+    ],
+    "amenities": [
+      "WasherDryer"
+    ],
+    "highlights": [
+      "TubShower",
+      "Intercom"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 1.6,
+    "squareFeet": 1132,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 3.5,
+    "numberOfReviews": 134,
+    "locationId": 46,
+    "managerCognitoId": "us-east-1:manager-0006"
+  },
+  {
+    "id": 47,
+    "name": "Modern Residence #47",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1330,
+    "securityDeposit": 1330,
+    "applicationFee": 95,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=47",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=47"
+    ],
+    "amenities": [
+      "Gym",
+      "HighSpeedInternet",
+      "PetsAllowed"
+    ],
+    "highlights": [
+      "TubShower",
+      "CloseToTransit",
+      "DoubleVanities"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 2,
+    "baths": 2.8,
+    "squareFeet": 933,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.119Z",
+    "averageRating": 4.4,
+    "numberOfReviews": 86,
+    "locationId": 47,
+    "managerCognitoId": "us-east-1:manager-0012"
+  },
+  {
+    "id": 48,
+    "name": "Modern Residence #48",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2754,
+    "securityDeposit": 2754,
+    "applicationFee": 73,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=48",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=48"
+    ],
+    "amenities": [
+      "HighSpeedInternet"
+    ],
+    "highlights": [
+      "QuietNeighborhood",
+      "Intercom",
+      "DoubleVanities"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 1.1,
+    "squareFeet": 2072,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.1,
+    "numberOfReviews": 10,
+    "locationId": 48,
+    "managerCognitoId": "us-east-1:manager-0024"
+  },
+  {
+    "id": 49,
+    "name": "Modern Residence #49",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5952,
+    "securityDeposit": 5952,
+    "applicationFee": 78,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=49",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=49"
+    ],
+    "amenities": [
+      "Parking",
+      "HighSpeedInternet",
+      "WalkInClosets"
+    ],
+    "highlights": [
+      "SmokeFree",
+      "Heating"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 1,
+    "baths": 1.2,
+    "squareFeet": 1553,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.8,
+    "numberOfReviews": 102,
+    "locationId": 49,
+    "managerCognitoId": "us-east-1:manager-0008"
+  },
+  {
+    "id": 50,
+    "name": "Modern Residence #50",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1160,
+    "securityDeposit": 1160,
+    "applicationFee": 97,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=50",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=50"
+    ],
+    "amenities": [
+      "Gym",
+      "AirConditioning",
+      "Microwave",
+      "Parking",
+      "Pool"
+    ],
+    "highlights": [
+      "Intercom"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 1,
+    "baths": 3,
+    "squareFeet": 1224,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.4,
+    "numberOfReviews": 168,
+    "locationId": 50,
+    "managerCognitoId": "us-east-1:manager-0005"
+  },
+  {
+    "id": 51,
+    "name": "Modern Residence #51",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1852,
+    "securityDeposit": 1852,
+    "applicationFee": 46,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=51",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=51"
+    ],
+    "amenities": [
+      "HardwoodFloors",
+      "HighSpeedInternet",
+      "PetsAllowed",
+      "Microwave"
+    ],
+    "highlights": [
+      "CableReady",
+      "AirConditioning"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 1.2,
+    "squareFeet": 1991,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.2,
+    "numberOfReviews": 185,
+    "locationId": 51,
+    "managerCognitoId": "us-east-1:manager-0012"
+  },
+  {
+    "id": 52,
+    "name": "Modern Residence #52",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5191,
+    "securityDeposit": 5191,
+    "applicationFee": 85,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=52",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=52"
+    ],
+    "amenities": [
+      "WalkInClosets",
+      "WiFi"
+    ],
+    "highlights": [
+      "CableReady",
+      "SatelliteTV",
+      "GreatView"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 1.2,
+    "squareFeet": 957,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 5,
+    "numberOfReviews": 107,
+    "locationId": 52,
+    "managerCognitoId": "us-east-1:manager-0020"
+  },
+  {
+    "id": 53,
+    "name": "Modern Residence #53",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1860,
+    "securityDeposit": 1860,
+    "applicationFee": 48,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=53",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=53"
+    ],
+    "amenities": [
+      "Microwave",
+      "WalkInClosets",
+      "AirConditioning"
+    ],
+    "highlights": [
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 1.7,
+    "squareFeet": 1966,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.4,
+    "numberOfReviews": 152,
+    "locationId": 53,
+    "managerCognitoId": "us-east-1:manager-0024"
+  },
+  {
+    "id": 54,
+    "name": "Modern Residence #54",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2992,
+    "securityDeposit": 2992,
+    "applicationFee": 68,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=54",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=54"
+    ],
+    "amenities": [
+      "AirConditioning",
+      "Pool",
+      "Gym",
+      "Dishwasher"
+    ],
+    "highlights": [
+      "TubShower",
+      "Intercom"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 2.5,
+    "squareFeet": 2187,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.7,
+    "numberOfReviews": 76,
+    "locationId": 54,
+    "managerCognitoId": "us-east-1:manager-0003"
+  },
+  {
+    "id": 55,
+    "name": "Modern Residence #55",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4824,
+    "securityDeposit": 4824,
+    "applicationFee": 86,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=55",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=55"
+    ],
+    "amenities": [
+      "WalkInClosets",
+      "HighSpeedInternet"
+    ],
+    "highlights": [
+      "GreatView"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 2,
+    "baths": 1.6,
+    "squareFeet": 1218,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4,
+    "numberOfReviews": 53,
+    "locationId": 55,
+    "managerCognitoId": "us-east-1:manager-0001"
+  },
+  {
+    "id": 56,
+    "name": "Modern Residence #56",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1069,
+    "securityDeposit": 1069,
+    "applicationFee": 93,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=56",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=56"
+    ],
+    "amenities": [
+      "HardwoodFloors"
+    ],
+    "highlights": [
+      "DoubleVanities",
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 2,
+    "baths": 2.5,
+    "squareFeet": 2088,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.1,
+    "numberOfReviews": 138,
+    "locationId": 56,
+    "managerCognitoId": "us-east-1:manager-0014"
+  },
+  {
+    "id": 57,
+    "name": "Modern Residence #57",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4292,
+    "securityDeposit": 4292,
+    "applicationFee": 50,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=57",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=57"
+    ],
+    "amenities": [
+      "Refrigerator"
+    ],
+    "highlights": [
+      "AirConditioning",
+      "WasherDryer"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 1,
+    "squareFeet": 887,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.8,
+    "numberOfReviews": 87,
+    "locationId": 57,
+    "managerCognitoId": "us-east-1:manager-0018"
+  },
+  {
+    "id": 58,
+    "name": "Modern Residence #58",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3402,
+    "securityDeposit": 3402,
+    "applicationFee": 98,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=58",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=58"
+    ],
+    "amenities": [
+      "AirConditioning",
+      "HighSpeedInternet",
+      "PetsAllowed",
+      "WasherDryer"
+    ],
+    "highlights": [
+      "DoubleVanities"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 3,
+    "squareFeet": 2006,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.4,
+    "numberOfReviews": 45,
+    "locationId": 58,
+    "managerCognitoId": "us-east-1:manager-0006"
+  },
+  {
+    "id": 59,
+    "name": "Modern Residence #59",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4335,
+    "securityDeposit": 4335,
+    "applicationFee": 37,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=59",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=59"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "HighSpeedInternet",
+      "AirConditioning",
+      "PetsAllowed"
+    ],
+    "highlights": [
+      "Intercom"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 4,
+    "baths": 2.5,
+    "squareFeet": 1273,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.8,
+    "numberOfReviews": 178,
+    "locationId": 59,
+    "managerCognitoId": "us-east-1:manager-0014"
+  },
+  {
+    "id": 60,
+    "name": "Modern Residence #60",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3689,
+    "securityDeposit": 3689,
+    "applicationFee": 66,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=60",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=60"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "WalkInClosets"
+    ],
+    "highlights": [
+      "Heating"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 2,
+    "baths": 2.1,
+    "squareFeet": 1768,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4,
+    "numberOfReviews": 176,
+    "locationId": 60,
+    "managerCognitoId": "us-east-1:manager-0013"
+  },
+  {
+    "id": 61,
+    "name": "Modern Residence #61",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5478,
+    "securityDeposit": 5478,
+    "applicationFee": 98,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=61",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=61"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "Dishwasher"
+    ],
+    "highlights": [
+      "DoubleVanities",
+      "HighSpeedInternetAccess",
+      "QuietNeighborhood"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 2.1,
+    "squareFeet": 1186,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.2,
+    "numberOfReviews": 176,
+    "locationId": 61,
+    "managerCognitoId": "us-east-1:manager-0025"
+  },
+  {
+    "id": 62,
+    "name": "Modern Residence #62",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4782,
+    "securityDeposit": 4782,
+    "applicationFee": 67,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=62",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=62"
+    ],
+    "amenities": [
+      "Microwave",
+      "HardwoodFloors",
+      "Gym",
+      "Dishwasher"
+    ],
+    "highlights": [
+      "DoubleVanities",
+      "CableReady",
+      "SmokeFree"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 3,
+    "baths": 1.2,
+    "squareFeet": 853,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.3,
+    "numberOfReviews": 51,
+    "locationId": 62,
+    "managerCognitoId": "us-east-1:manager-0024"
+  },
+  {
+    "id": 63,
+    "name": "Modern Residence #63",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1372,
+    "securityDeposit": 1372,
+    "applicationFee": 31,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=63",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=63"
+    ],
+    "amenities": [
+      "HighSpeedInternet",
+      "Microwave",
+      "Refrigerator"
+    ],
+    "highlights": [
+      "HighSpeedInternetAccess",
+      "WasherDryer"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 1,
+    "baths": 2.4,
+    "squareFeet": 2217,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.2,
+    "numberOfReviews": 80,
+    "locationId": 63,
+    "managerCognitoId": "us-east-1:manager-0008"
+  },
+  {
+    "id": 64,
+    "name": "Modern Residence #64",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5360,
+    "securityDeposit": 5360,
+    "applicationFee": 97,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=64",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=64"
+    ],
+    "amenities": [
+      "PetsAllowed",
+      "Pool",
+      "WalkInClosets"
+    ],
+    "highlights": [
+      "WasherDryer",
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 2,
+    "squareFeet": 545,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.7,
+    "numberOfReviews": 7,
+    "locationId": 64,
+    "managerCognitoId": "us-east-1:manager-0022"
+  },
+  {
+    "id": 65,
+    "name": "Modern Residence #65",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3811,
+    "securityDeposit": 3811,
+    "applicationFee": 32,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=65",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=65"
+    ],
+    "amenities": [
+      "Parking",
+      "Dishwasher",
+      "WalkInClosets",
+      "Pool",
+      "AirConditioning"
+    ],
+    "highlights": [
+      "Heating"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 3,
+    "squareFeet": 1648,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.8,
+    "numberOfReviews": 123,
+    "locationId": 65,
+    "managerCognitoId": "us-east-1:manager-0008"
+  },
+  {
+    "id": 66,
+    "name": "Modern Residence #66",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2687,
+    "securityDeposit": 2687,
+    "applicationFee": 68,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=66",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=66"
+    ],
+    "amenities": [
+      "WalkInClosets",
+      "HardwoodFloors",
+      "HighSpeedInternet",
+      "Gym"
+    ],
+    "highlights": [
+      "GreatView",
+      "Intercom",
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 4,
+    "baths": 1,
+    "squareFeet": 820,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.4,
+    "numberOfReviews": 151,
+    "locationId": 66,
+    "managerCognitoId": "us-east-1:manager-0021"
+  },
+  {
+    "id": 67,
+    "name": "Modern Residence #67",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3606,
+    "securityDeposit": 3606,
+    "applicationFee": 86,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=67",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=67"
+    ],
+    "amenities": [
+      "Dishwasher",
+      "HighSpeedInternet",
+      "Pool",
+      "Parking",
+      "Gym"
+    ],
+    "highlights": [
+      "GreatView",
+      "Heating"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 4,
+    "baths": 1.2,
+    "squareFeet": 1794,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.3,
+    "numberOfReviews": 175,
+    "locationId": 67,
+    "managerCognitoId": "us-east-1:manager-0020"
+  },
+  {
+    "id": 68,
+    "name": "Modern Residence #68",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4825,
+    "securityDeposit": 4825,
+    "applicationFee": 76,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=68",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=68"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "AirConditioning"
+    ],
+    "highlights": [
+      "SatelliteTV",
+      "SmokeFree",
+      "QuietNeighborhood"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 4,
+    "baths": 2.9,
+    "squareFeet": 1992,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.8,
+    "numberOfReviews": 77,
+    "locationId": 68,
+    "managerCognitoId": "us-east-1:manager-0011"
+  },
+  {
+    "id": 69,
+    "name": "Modern Residence #69",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1464,
+    "securityDeposit": 1464,
+    "applicationFee": 47,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=69",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=69"
+    ],
+    "amenities": [
+      "Refrigerator",
+      "HighSpeedInternet"
+    ],
+    "highlights": [
+      "GreatView",
+      "WasherDryer",
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 2.7,
+    "squareFeet": 682,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.9,
+    "numberOfReviews": 61,
+    "locationId": 69,
+    "managerCognitoId": "us-east-1:manager-0025"
+  },
+  {
+    "id": 70,
+    "name": "Modern Residence #70",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2540,
+    "securityDeposit": 2540,
+    "applicationFee": 53,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=70",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=70"
+    ],
+    "amenities": [
+      "Microwave",
+      "WasherDryer"
+    ],
+    "highlights": [
+      "AirConditioning"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 2.8,
+    "squareFeet": 1611,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.1,
+    "numberOfReviews": 70,
+    "locationId": 70,
+    "managerCognitoId": "us-east-1:manager-0019"
+  },
+  {
+    "id": 71,
+    "name": "Modern Residence #71",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5426,
+    "securityDeposit": 5426,
+    "applicationFee": 57,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=71",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=71"
+    ],
+    "amenities": [
+      "Parking",
+      "Microwave",
+      "Dishwasher",
+      "WalkInClosets",
+      "AirConditioning"
+    ],
+    "highlights": [
+      "DoubleVanities"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 3,
+    "baths": 1.3,
+    "squareFeet": 1666,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.6,
+    "numberOfReviews": 65,
+    "locationId": 71,
+    "managerCognitoId": "us-east-1:manager-0018"
+  },
+  {
+    "id": 72,
+    "name": "Modern Residence #72",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5869,
+    "securityDeposit": 5869,
+    "applicationFee": 45,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=72",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=72"
+    ],
+    "amenities": [
+      "Dishwasher",
+      "Gym"
+    ],
+    "highlights": [
+      "Heating"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 1.5,
+    "squareFeet": 2176,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.5,
+    "numberOfReviews": 165,
+    "locationId": 72,
+    "managerCognitoId": "us-east-1:manager-0003"
+  },
+  {
+    "id": 73,
+    "name": "Modern Residence #73",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1790,
+    "securityDeposit": 1790,
+    "applicationFee": 86,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=73",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=73"
+    ],
+    "amenities": [
+      "WasherDryer"
+    ],
+    "highlights": [
+      "HighSpeedInternetAccess",
+      "WasherDryer"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 1,
+    "baths": 1.2,
+    "squareFeet": 1399,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.9,
+    "numberOfReviews": 72,
+    "locationId": 73,
+    "managerCognitoId": "us-east-1:manager-0002"
+  },
+  {
+    "id": 74,
+    "name": "Modern Residence #74",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4954,
+    "securityDeposit": 4954,
+    "applicationFee": 53,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=74",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=74"
+    ],
+    "amenities": [
+      "WiFi",
+      "WasherDryer",
+      "Refrigerator",
+      "Pool",
+      "Microwave"
+    ],
+    "highlights": [
+      "SatelliteTV"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 2.3,
+    "squareFeet": 1027,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.5,
+    "numberOfReviews": 132,
+    "locationId": 74,
+    "managerCognitoId": "us-east-1:manager-0008"
+  },
+  {
+    "id": 75,
+    "name": "Modern Residence #75",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5585,
+    "securityDeposit": 5585,
+    "applicationFee": 38,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=75",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=75"
+    ],
+    "amenities": [
+      "HardwoodFloors",
+      "HighSpeedInternet",
+      "WalkInClosets"
+    ],
+    "highlights": [
+      "RecentlyRenovated",
+      "SatelliteTV"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 2.2,
+    "squareFeet": 830,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.3,
+    "numberOfReviews": 40,
+    "locationId": 75,
+    "managerCognitoId": "us-east-1:manager-0007"
+  },
+  {
+    "id": 76,
+    "name": "Modern Residence #76",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5064,
+    "securityDeposit": 5064,
+    "applicationFee": 78,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=76",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=76"
+    ],
+    "amenities": [
+      "Pool",
+      "Refrigerator"
+    ],
+    "highlights": [
+      "RecentlyRenovated",
+      "DoubleVanities",
+      "QuietNeighborhood"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 2.8,
+    "squareFeet": 541,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.1,
+    "numberOfReviews": 126,
+    "locationId": 76,
+    "managerCognitoId": "us-east-1:manager-0014"
+  },
+  {
+    "id": 77,
+    "name": "Modern Residence #77",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2263,
+    "securityDeposit": 2263,
+    "applicationFee": 73,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=77",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=77"
+    ],
+    "amenities": [
+      "HardwoodFloors",
+      "AirConditioning"
+    ],
+    "highlights": [
+      "DoubleVanities",
+      "GreatView"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 1.1,
+    "squareFeet": 562,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.2,
+    "numberOfReviews": 136,
+    "locationId": 77,
+    "managerCognitoId": "us-east-1:manager-0007"
+  },
+  {
+    "id": 78,
+    "name": "Modern Residence #78",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 920,
+    "securityDeposit": 920,
+    "applicationFee": 31,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=78",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=78"
+    ],
+    "amenities": [
+      "HighSpeedInternet",
+      "HardwoodFloors",
+      "Microwave",
+      "Parking"
+    ],
+    "highlights": [
+      "HighSpeedInternetAccess",
+      "WasherDryer",
+      "SprinklerSystem"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 2,
+    "squareFeet": 1105,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.1,
+    "numberOfReviews": 52,
+    "locationId": 78,
+    "managerCognitoId": "us-east-1:manager-0001"
+  },
+  {
+    "id": 79,
+    "name": "Modern Residence #79",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1730,
+    "securityDeposit": 1730,
+    "applicationFee": 54,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=79",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=79"
+    ],
+    "amenities": [
+      "WalkInClosets",
+      "Microwave"
+    ],
+    "highlights": [
+      "HighSpeedInternetAccess",
+      "CableReady"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 1.3,
+    "squareFeet": 1815,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.6,
+    "numberOfReviews": 126,
+    "locationId": 79,
+    "managerCognitoId": "us-east-1:manager-0013"
+  },
+  {
+    "id": 80,
+    "name": "Modern Residence #80",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1881,
+    "securityDeposit": 1881,
+    "applicationFee": 84,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=80"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "Microwave",
+      "Gym"
+    ],
+    "highlights": [
+      "QuietNeighborhood",
+      "RecentlyRenovated",
+      "DoubleVanities"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 2.4,
+    "squareFeet": 618,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 3.9,
+    "numberOfReviews": 103,
+    "locationId": 80,
+    "managerCognitoId": "us-east-1:manager-0014"
+  },
+  {
+    "id": 81,
+    "name": "Modern Residence #81",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4888,
+    "securityDeposit": 4888,
+    "applicationFee": 89,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=81",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=81"
+    ],
+    "amenities": [
+      "HighSpeedInternet",
+      "WasherDryer",
+      "HardwoodFloors",
+      "Refrigerator"
+    ],
+    "highlights": [
+      "Intercom"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 2,
+    "baths": 2,
+    "squareFeet": 1363,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.4,
+    "numberOfReviews": 147,
+    "locationId": 81,
+    "managerCognitoId": "us-east-1:manager-0002"
+  },
+  {
+    "id": 82,
+    "name": "Modern Residence #82",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3648,
+    "securityDeposit": 3648,
+    "applicationFee": 68,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=82",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=82"
+    ],
+    "amenities": [
+      "Parking",
+      "Dishwasher"
+    ],
+    "highlights": [
+      "WasherDryer",
+      "HighSpeedInternetAccess",
+      "RecentlyRenovated"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 1.7,
+    "squareFeet": 1995,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 4.3,
+    "numberOfReviews": 81,
+    "locationId": 82,
+    "managerCognitoId": "us-east-1:manager-0008"
+  },
+  {
+    "id": 83,
+    "name": "Modern Residence #83",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1821,
+    "securityDeposit": 1821,
+    "applicationFee": 33,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=83",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=83"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "PetsAllowed",
+      "AirConditioning",
+      "Dishwasher",
+      "Gym"
+    ],
+    "highlights": [
+      "AirConditioning",
+      "QuietNeighborhood"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 1,
+    "baths": 1.9,
+    "squareFeet": 1851,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 5,
+    "numberOfReviews": 127,
+    "locationId": 83,
+    "managerCognitoId": "us-east-1:manager-0015"
+  },
+  {
+    "id": 84,
+    "name": "Modern Residence #84",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2393,
+    "securityDeposit": 2393,
+    "applicationFee": 48,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=84",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=84"
+    ],
+    "amenities": [
+      "WalkInClosets",
+      "Pool"
+    ],
+    "highlights": [
+      "Heating",
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 2,
+    "baths": 2.7,
+    "squareFeet": 1749,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.120Z",
+    "averageRating": 5,
+    "numberOfReviews": 116,
+    "locationId": 84,
+    "managerCognitoId": "us-east-1:manager-0021"
+  },
+  {
+    "id": 85,
+    "name": "Modern Residence #85",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2756,
+    "securityDeposit": 2756,
+    "applicationFee": 92,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=85",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=85"
+    ],
+    "amenities": [
+      "Refrigerator",
+      "WasherDryer",
+      "PetsAllowed",
+      "WalkInClosets",
+      "Pool"
+    ],
+    "highlights": [
+      "WasherDryer",
+      "HighSpeedInternetAccess",
+      "RecentlyRenovated"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 1,
+    "squareFeet": 2084,
+    "propertyType": "Cottage",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 5,
+    "numberOfReviews": 5,
+    "locationId": 85,
+    "managerCognitoId": "us-east-1:manager-0006"
+  },
+  {
+    "id": 86,
+    "name": "Modern Residence #86",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1361,
+    "securityDeposit": 1361,
+    "applicationFee": 66,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=86",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=86"
+    ],
+    "amenities": [
+      "Parking",
+      "WiFi",
+      "HighSpeedInternet",
+      "WasherDryer"
+    ],
+    "highlights": [
+      "CableReady",
+      "SprinklerSystem"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 2.1,
+    "squareFeet": 716,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 4.7,
+    "numberOfReviews": 91,
+    "locationId": 86,
+    "managerCognitoId": "us-east-1:manager-0006"
+  },
+  {
+    "id": 87,
+    "name": "Modern Residence #87",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1425,
+    "securityDeposit": 1425,
+    "applicationFee": 44,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=87",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=87"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "HardwoodFloors"
+    ],
+    "highlights": [
+      "HighSpeedInternetAccess",
+      "WasherDryer"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 4,
+    "baths": 2.4,
+    "squareFeet": 2453,
+    "propertyType": "Villa",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 3.9,
+    "numberOfReviews": 82,
+    "locationId": 87,
+    "managerCognitoId": "us-east-1:manager-0023"
+  },
+  {
+    "id": 88,
+    "name": "Modern Residence #88",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5721,
+    "securityDeposit": 5721,
+    "applicationFee": 59,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=88",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=88"
+    ],
+    "amenities": [
+      "PetsAllowed",
+      "Microwave",
+      "HardwoodFloors"
+    ],
+    "highlights": [
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 1,
+    "baths": 2.7,
+    "squareFeet": 2310,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 3.2,
+    "numberOfReviews": 96,
+    "locationId": 88,
+    "managerCognitoId": "us-east-1:manager-0007"
+  },
+  {
+    "id": 89,
+    "name": "Modern Residence #89",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 938,
+    "securityDeposit": 938,
+    "applicationFee": 79,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=89",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=89"
+    ],
+    "amenities": [
+      "HighSpeedInternet",
+      "Dishwasher",
+      "Refrigerator",
+      "Parking"
+    ],
+    "highlights": [
+      "Heating",
+      "CloseToTransit"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 4,
+    "baths": 1.7,
+    "squareFeet": 1621,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 4.7,
+    "numberOfReviews": 152,
+    "locationId": 89,
+    "managerCognitoId": "us-east-1:manager-0012"
+  },
+  {
+    "id": 90,
+    "name": "Modern Residence #90",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3266,
+    "securityDeposit": 3266,
+    "applicationFee": 85,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=90",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=90"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "HardwoodFloors",
+      "AirConditioning",
+      "Gym"
+    ],
+    "highlights": [
+      "WasherDryer",
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 2,
+    "baths": 1.4,
+    "squareFeet": 1579,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 4.8,
+    "numberOfReviews": 125,
+    "locationId": 90,
+    "managerCognitoId": "us-east-1:manager-0003"
+  },
+  {
+    "id": 91,
+    "name": "Modern Residence #91",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3527,
+    "securityDeposit": 3527,
+    "applicationFee": 32,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=91",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=91"
+    ],
+    "amenities": [
+      "Dishwasher",
+      "HighSpeedInternet",
+      "Gym"
+    ],
+    "highlights": [
+      "CloseToTransit",
+      "RecentlyRenovated"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 3,
+    "baths": 1.7,
+    "squareFeet": 621,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 4.6,
+    "numberOfReviews": 151,
+    "locationId": 91,
+    "managerCognitoId": "us-east-1:manager-0007"
+  },
+  {
+    "id": 92,
+    "name": "Modern Residence #92",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3954,
+    "securityDeposit": 3954,
+    "applicationFee": 73,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=92",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=92"
+    ],
+    "amenities": [
+      "WalkInClosets",
+      "WasherDryer",
+      "Gym"
+    ],
+    "highlights": [
+      "AirConditioning"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 2.5,
+    "squareFeet": 2305,
+    "propertyType": "Tinyhouse",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 4.4,
+    "numberOfReviews": 136,
+    "locationId": 92,
+    "managerCognitoId": "us-east-1:manager-0021"
+  },
+  {
+    "id": 93,
+    "name": "Modern Residence #93",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 3271,
+    "securityDeposit": 3271,
+    "applicationFee": 46,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=93",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=93"
+    ],
+    "amenities": [
+      "WasherDryer",
+      "AirConditioning",
+      "WalkInClosets",
+      "Pool",
+      "Dishwasher"
+    ],
+    "highlights": [
+      "AirConditioning",
+      "WasherDryer"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 1,
+    "baths": 2.1,
+    "squareFeet": 1111,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 3.6,
+    "numberOfReviews": 195,
+    "locationId": 93,
+    "managerCognitoId": "us-east-1:manager-0004"
+  },
+  {
+    "id": 94,
+    "name": "Modern Residence #94",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 2827,
+    "securityDeposit": 2827,
+    "applicationFee": 94,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=94",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=94"
+    ],
+    "amenities": [
+      "Dishwasher",
+      "Pool",
+      "WalkInClosets",
+      "WasherDryer"
+    ],
+    "highlights": [
+      "GreatView"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 3,
+    "baths": 1.9,
+    "squareFeet": 591,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 4,
+    "numberOfReviews": 183,
+    "locationId": 94,
+    "managerCognitoId": "us-east-1:manager-0005"
+  },
+  {
+    "id": 95,
+    "name": "Modern Residence #95",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 4222,
+    "securityDeposit": 4222,
+    "applicationFee": 90,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=95",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=95"
+    ],
+    "amenities": [
+      "HighSpeedInternet",
+      "Gym",
+      "WalkInClosets",
+      "Pool"
+    ],
+    "highlights": [
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 1.6,
+    "squareFeet": 1407,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 3.4,
+    "numberOfReviews": 121,
+    "locationId": 95,
+    "managerCognitoId": "us-east-1:manager-0016"
+  },
+  {
+    "id": 96,
+    "name": "Modern Residence #96",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1629,
+    "securityDeposit": 1629,
+    "applicationFee": 83,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=96",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=96"
+    ],
+    "amenities": [
+      "Dishwasher",
+      "Microwave",
+      "Gym"
+    ],
+    "highlights": [
+      "CloseToTransit",
+      "CableReady",
+      "GreatView"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": false,
+    "beds": 4,
+    "baths": 1.5,
+    "squareFeet": 2113,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 3.5,
+    "numberOfReviews": 161,
+    "locationId": 96,
+    "managerCognitoId": "us-east-1:manager-0014"
+  },
+  {
+    "id": 97,
+    "name": "Modern Residence #97",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 920,
+    "securityDeposit": 920,
+    "applicationFee": 47,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=97",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=97"
+    ],
+    "amenities": [
+      "PetsAllowed"
+    ],
+    "highlights": [
+      "HighSpeedInternetAccess",
+      "SatelliteTV"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": true,
+    "beds": 2,
+    "baths": 1.3,
+    "squareFeet": 510,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 4.5,
+    "numberOfReviews": 167,
+    "locationId": 97,
+    "managerCognitoId": "us-east-1:manager-0022"
+  },
+  {
+    "id": 98,
+    "name": "Modern Residence #98",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1467,
+    "securityDeposit": 1467,
+    "applicationFee": 57,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=98",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=98"
+    ],
+    "amenities": [
+      "WalkInClosets",
+      "WiFi"
+    ],
+    "highlights": [
+      "HighSpeedInternetAccess"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 4,
+    "baths": 1.7,
+    "squareFeet": 1774,
+    "propertyType": "Rooms",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 3.7,
+    "numberOfReviews": 17,
+    "locationId": 98,
+    "managerCognitoId": "us-east-1:manager-0018"
+  },
+  {
+    "id": 99,
+    "name": "Modern Residence #99",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 1666,
+    "securityDeposit": 1666,
+    "applicationFee": 78,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=99",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=99"
+    ],
+    "amenities": [
+      "Microwave",
+      "WalkInClosets",
+      "Parking",
+      "HardwoodFloors",
+      "Gym"
+    ],
+    "highlights": [
+      "Heating",
+      "GreatView",
+      "SprinklerSystem"
+    ],
+    "isPetsAllowed": true,
+    "isParkingIncluded": true,
+    "beds": 2,
+    "baths": 1,
+    "squareFeet": 2272,
+    "propertyType": "Townhouse",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 5,
+    "numberOfReviews": 95,
+    "locationId": 99,
+    "managerCognitoId": "us-east-1:manager-0009"
+  },
+  {
+    "id": 100,
+    "name": "Modern Residence #100",
+    "description": "Beautiful rental property located in a vibrant neighborhood with easy access to transit, dining, and parks.",
+    "pricePerMonth": 5635,
+    "securityDeposit": 5635,
+    "applicationFee": 73,
+    "photoUrls": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200&q=80&sig=100",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&sig=100"
+    ],
+    "amenities": [
+      "Dishwasher",
+      "PetsAllowed",
+      "Microwave",
+      "Pool",
+      "Gym"
+    ],
+    "highlights": [
+      "RecentlyRenovated",
+      "SmokeFree"
+    ],
+    "isPetsAllowed": false,
+    "isParkingIncluded": false,
+    "beds": 1,
+    "baths": 1.6,
+    "squareFeet": 1789,
+    "propertyType": "Apartment",
+    "postedDate": "2026-02-24T15:49:05.121Z",
+    "averageRating": 4.5,
+    "numberOfReviews": 87,
+    "locationId": 100,
+    "managerCognitoId": "us-east-1:manager-0008"
+  }
+]

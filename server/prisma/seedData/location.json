@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "3922 Main St",
+    "postalCode": "26905",
+    "coordinates": "POINT(-74.0287599833513 40.733199784139785)"
+  },
+  {
+    "id": 2,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "3633 Main St",
+    "postalCode": "22765",
+    "coordinates": "POINT(-122.34454851073883 47.55967350211581)"
+  },
+  {
+    "id": 3,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "7137 Main St",
+    "postalCode": "97062",
+    "coordinates": "POINT(-105.01583880862634 39.734853198224194)"
+  },
+  {
+    "id": 4,
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "3606 Main St",
+    "postalCode": "99475",
+    "coordinates": "POINT(-118.29842354163019 34.091236721282854)"
+  },
+  {
+    "id": 5,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "7889 Main St",
+    "postalCode": "65145",
+    "coordinates": "POINT(-105.02773717910337 39.68456721472763)"
+  },
+  {
+    "id": 6,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "2104 Main St",
+    "postalCode": "43410",
+    "coordinates": "POINT(-73.94767352120996 40.755976299149104)"
+  },
+  {
+    "id": 7,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "9151 Main St",
+    "postalCode": "98746",
+    "coordinates": "POINT(-122.29380892331451 47.65655374413482)"
+  },
+  {
+    "id": 8,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "543 Main St",
+    "postalCode": "60742",
+    "coordinates": "POINT(-80.22568026622615 25.732155601879814)"
+  },
+  {
+    "id": 9,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "8868 Main St",
+    "postalCode": "52920",
+    "coordinates": "POINT(-122.38126740468056 47.582044225351886)"
+  },
+  {
+    "id": 10,
+    "country": "United States",
+    "city": "Austin",
+    "state": "TX",
+    "address": "9056 Main St",
+    "postalCode": "42229",
+    "coordinates": "POINT(-97.76671327383644 30.23466685471324)"
+  },
+  {
+    "id": 11,
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "3776 Main St",
+    "postalCode": "81825",
+    "coordinates": "POINT(-118.23928559489715 34.080159828845424)"
+  },
+  {
+    "id": 12,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "8066 Main St",
+    "postalCode": "83624",
+    "coordinates": "POINT(-104.95827655225682 39.7855157052036)"
+  },
+  {
+    "id": 13,
+    "country": "United States",
+    "city": "Austin",
+    "state": "TX",
+    "address": "1401 Main St",
+    "postalCode": "86632",
+    "coordinates": "POINT(-97.68919902258764 30.24707153737185)"
+  },
+  {
+    "id": 14,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "3454 Main St",
+    "postalCode": "45770",
+    "coordinates": "POINT(-73.93641987581688 40.69571101965839)"
+  },
+  {
+    "id": 15,
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "7232 Main St",
+    "postalCode": "97159",
+    "coordinates": "POINT(-118.29813497195506 34.00692566976749)"
+  },
+  {
+    "id": 16,
+    "country": "United States",
+    "city": "Austin",
+    "state": "TX",
+    "address": "2344 Main St",
+    "postalCode": "55565",
+    "coordinates": "POINT(-97.71144304581394 30.260394635559752)"
+  },
+  {
+    "id": 17,
+    "country": "United States",
+    "city": "Boston",
+    "state": "MA",
+    "address": "7310 Main St",
+    "postalCode": "25077",
+    "coordinates": "POINT(-71.00957028234164 42.34719336863113)"
+  },
+  {
+    "id": 18,
+    "country": "United States",
+    "city": "Austin",
+    "state": "TX",
+    "address": "3534 Main St",
+    "postalCode": "95271",
+    "coordinates": "POINT(-97.74230856986277 30.3046011856459)"
+  },
+  {
+    "id": 19,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "7807 Main St",
+    "postalCode": "67219",
+    "coordinates": "POINT(-122.3428003929858 47.650999562191274)"
+  },
+  {
+    "id": 20,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "7547 Main St",
+    "postalCode": "98610",
+    "coordinates": "POINT(-80.20559827434026 25.740655862275727)"
+  },
+  {
+    "id": 21,
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "9696 Main St",
+    "postalCode": "86644",
+    "coordinates": "POINT(-118.23854692922664 34.078006709625846)"
+  },
+  {
+    "id": 22,
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "3132 Main St",
+    "postalCode": "34656",
+    "coordinates": "POINT(-118.26258202076518 34.0668015686906)"
+  },
+  {
+    "id": 23,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "3531 Main St",
+    "postalCode": "32322",
+    "coordinates": "POINT(-80.13964738718518 25.713591489302384)"
+  },
+  {
+    "id": 24,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "3625 Main St",
+    "postalCode": "62813",
+    "coordinates": "POINT(-80.1838024990644 25.82151982481895)"
+  },
+  {
+    "id": 25,
+    "country": "United States",
+    "city": "Boston",
+    "state": "MA",
+    "address": "5888 Main St",
+    "postalCode": "20480",
+    "coordinates": "POINT(-71.01545774082709 42.34842582750057)"
+  },
+  {
+    "id": 26,
+    "country": "United States",
+    "city": "Boston",
+    "state": "MA",
+    "address": "4669 Main St",
+    "postalCode": "22767",
+    "coordinates": "POINT(-71.1148555676402 42.34501696309351)"
+  },
+  {
+    "id": 27,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "6552 Main St",
+    "postalCode": "66675",
+    "coordinates": "POINT(-105.03554468691736 39.72944138253629)"
+  },
+  {
+    "id": 28,
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "538 Main St",
+    "postalCode": "61873",
+    "coordinates": "POINT(-118.25918707137274 34.109063234385964)"
+  },
+  {
+    "id": 29,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "3769 Main St",
+    "postalCode": "90907",
+    "coordinates": "POINT(-105.0339288019556 39.78409735029676)"
+  },
+  {
+    "id": 30,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "1167 Main St",
+    "postalCode": "52936",
+    "coordinates": "POINT(-73.98003822763062 40.72709163370197)"
+  },
+  {
+    "id": 31,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "341 Main St",
+    "postalCode": "38399",
+    "coordinates": "POINT(-104.93761054567393 39.76056144679214)"
+  },
+  {
+    "id": 32,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "9515 Main St",
+    "postalCode": "75815",
+    "coordinates": "POINT(-104.97966770111246 39.718132770023445)"
+  },
+  {
+    "id": 33,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "3730 Main St",
+    "postalCode": "72535",
+    "coordinates": "POINT(-80.17324680234597 25.767358446180236)"
+  },
+  {
+    "id": 34,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "6754 Main St",
+    "postalCode": "12740",
+    "coordinates": "POINT(-122.31705928970182 47.5878959275451)"
+  },
+  {
+    "id": 35,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "9692 Main St",
+    "postalCode": "96074",
+    "coordinates": "POINT(-122.37056222079185 47.57505474346571)"
+  },
+  {
+    "id": 36,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "2592 Main St",
+    "postalCode": "19481",
+    "coordinates": "POINT(-80.17992839884194 25.747439923009654)"
+  },
+  {
+    "id": 37,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "6548 Main St",
+    "postalCode": "14747",
+    "coordinates": "POINT(-73.97643336465369 40.71480229418725)"
+  },
+  {
+    "id": 38,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "5217 Main St",
+    "postalCode": "88548",
+    "coordinates": "POINT(-80.13740932663016 25.813693545817337)"
+  },
+  {
+    "id": 39,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "4340 Main St",
+    "postalCode": "75863",
+    "coordinates": "POINT(-80.2380344068705 25.723645993522876)"
+  },
+  {
+    "id": 40,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "2167 Main St",
+    "postalCode": "94889",
+    "coordinates": "POINT(-73.98526271623857 40.71308364794867)"
+  },
+  {
+    "id": 41,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "8460 Main St",
+    "postalCode": "54754",
+    "coordinates": "POINT(-80.14525060610643 25.717476045982288)"
+  },
+  {
+    "id": 42,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "2092 Main St",
+    "postalCode": "43596",
+    "coordinates": "POINT(-87.57291494076185 41.8287839134546)"
+  },
+  {
+    "id": 43,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "8256 Main St",
+    "postalCode": "62786",
+    "coordinates": "POINT(-74.04430375614774 40.80108881774467)"
+  },
+  {
+    "id": 44,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "3532 Main St",
+    "postalCode": "22002",
+    "coordinates": "POINT(-87.63177899035861 41.88300839221208)"
+  },
+  {
+    "id": 45,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "8376 Main St",
+    "postalCode": "30514",
+    "coordinates": "POINT(-73.97730560357235 40.78223734290611)"
+  },
+  {
+    "id": 46,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "6876 Main St",
+    "postalCode": "83673",
+    "coordinates": "POINT(-73.98358411876463 40.74078377598284)"
+  },
+  {
+    "id": 47,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "4119 Main St",
+    "postalCode": "38897",
+    "coordinates": "POINT(-80.17093209675592 25.736841034117486)"
+  },
+  {
+    "id": 48,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "2123 Main St",
+    "postalCode": "15825",
+    "coordinates": "POINT(-104.94565030718312 39.75867873530339)"
+  },
+  {
+    "id": 49,
+    "country": "United States",
+    "city": "Austin",
+    "state": "TX",
+    "address": "1142 Main St",
+    "postalCode": "59141",
+    "coordinates": "POINT(-97.7858126770645 30.28339265584224)"
+  },
+  {
+    "id": 50,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "1511 Main St",
+    "postalCode": "10464",
+    "coordinates": "POINT(-74.0338320234456 40.72377542829994)"
+  },
+  {
+    "id": 51,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "9567 Main St",
+    "postalCode": "33244",
+    "coordinates": "POINT(-104.94795113027429 39.7666248537652)"
+  },
+  {
+    "id": 52,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "3954 Main St",
+    "postalCode": "56738",
+    "coordinates": "POINT(-80.13783151006123 25.7204984877396)"
+  },
+  {
+    "id": 53,
+    "country": "United States",
+    "city": "Boston",
+    "state": "MA",
+    "address": "5630 Main St",
+    "postalCode": "10861",
+    "coordinates": "POINT(-71.01824061427418 42.305232844048426)"
+  },
+  {
+    "id": 54,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "1006 Main St",
+    "postalCode": "43145",
+    "coordinates": "POINT(-80.24924906134524 25.720201250560248)"
+  },
+  {
+    "id": 55,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "1668 Main St",
+    "postalCode": "37599",
+    "coordinates": "POINT(-80.14833233269664 25.721996832334035)"
+  },
+  {
+    "id": 56,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "8825 Main St",
+    "postalCode": "98572",
+    "coordinates": "POINT(-87.67304594920635 41.916203068000854)"
+  },
+  {
+    "id": 57,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "9041 Main St",
+    "postalCode": "71160",
+    "coordinates": "POINT(-87.59962562983961 41.914359060439715)"
+  },
+  {
+    "id": 58,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "4949 Main St",
+    "postalCode": "68323",
+    "coordinates": "POINT(-87.62965900364021 41.81901423432208)"
+  },
+  {
+    "id": 59,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "3012 Main St",
+    "postalCode": "36171",
+    "coordinates": "POINT(-87.59042836073515 41.87503752846432)"
+  },
+  {
+    "id": 60,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "4853 Main St",
+    "postalCode": "70622",
+    "coordinates": "POINT(-73.97059471466355 40.75983869132211)"
+  },
+  {
+    "id": 61,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "7228 Main St",
+    "postalCode": "16285",
+    "coordinates": "POINT(-122.30560438431634 47.61855084853414)"
+  },
+  {
+    "id": 62,
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "1214 Main St",
+    "postalCode": "34086",
+    "coordinates": "POINT(-118.24812427645202 33.99486289710346)"
+  },
+  {
+    "id": 63,
+    "country": "United States",
+    "city": "Austin",
+    "state": "TX",
+    "address": "1359 Main St",
+    "postalCode": "40174",
+    "coordinates": "POINT(-97.71111462000846 30.27263358969042)"
+  },
+  {
+    "id": 64,
+    "country": "United States",
+    "city": "Austin",
+    "state": "TX",
+    "address": "6138 Main St",
+    "postalCode": "88555",
+    "coordinates": "POINT(-97.75868285255459 30.295288089888675)"
+  },
+  {
+    "id": 65,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "1263 Main St",
+    "postalCode": "51231",
+    "coordinates": "POINT(-74.0161725681152 40.7024167461275)"
+  },
+  {
+    "id": 66,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "8349 Main St",
+    "postalCode": "92094",
+    "coordinates": "POINT(-80.17046041955116 25.810813692433697)"
+  },
+  {
+    "id": 67,
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "293 Main St",
+    "postalCode": "11656",
+    "coordinates": "POINT(-118.19354318439314 33.99613897705681)"
+  },
+  {
+    "id": 68,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "8158 Main St",
+    "postalCode": "13112",
+    "coordinates": "POINT(-104.97430612893419 39.7028505763572)"
+  },
+  {
+    "id": 69,
+    "country": "United States",
+    "city": "Austin",
+    "state": "TX",
+    "address": "795 Main St",
+    "postalCode": "45204",
+    "coordinates": "POINT(-97.78318469773994 30.295332304535545)"
+  },
+  {
+    "id": 70,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "7095 Main St",
+    "postalCode": "88073",
+    "coordinates": "POINT(-122.33330954264886 47.551690662324454)"
+  },
+  {
+    "id": 71,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "4727 Main St",
+    "postalCode": "56937",
+    "coordinates": "POINT(-87.67814721920128 41.92460051368482)"
+  },
+  {
+    "id": 72,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "1666 Main St",
+    "postalCode": "17704",
+    "coordinates": "POINT(-105.00726249614381 39.718094871768514)"
+  },
+  {
+    "id": 73,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "4178 Main St",
+    "postalCode": "54609",
+    "coordinates": "POINT(-87.6575736101965 41.86877457081606)"
+  },
+  {
+    "id": 74,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "4382 Main St",
+    "postalCode": "23844",
+    "coordinates": "POINT(-74.01634602692401 40.784634031346876)"
+  },
+  {
+    "id": 75,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "3716 Main St",
+    "postalCode": "83683",
+    "coordinates": "POINT(-80.20936496263734 25.710324724643243)"
+  },
+  {
+    "id": 76,
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "6292 Main St",
+    "postalCode": "23071",
+    "coordinates": "POINT(-118.21394433512025 34.05050881544456)"
+  },
+  {
+    "id": 77,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "958 Main St",
+    "postalCode": "79636",
+    "coordinates": "POINT(-80.19832633365165 25.820819931448415)"
+  },
+  {
+    "id": 78,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "6243 Main St",
+    "postalCode": "36474",
+    "coordinates": "POINT(-80.17468952248687 25.808907950950275)"
+  },
+  {
+    "id": 79,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "4158 Main St",
+    "postalCode": "72258",
+    "coordinates": "POINT(-87.64842268121227 41.88590769302904)"
+  },
+  {
+    "id": 80,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "2809 Main St",
+    "postalCode": "12527",
+    "coordinates": "POINT(-73.99469279620945 40.7596065172223)"
+  },
+  {
+    "id": 81,
+    "country": "United States",
+    "city": "Boston",
+    "state": "MA",
+    "address": "9590 Main St",
+    "postalCode": "79145",
+    "coordinates": "POINT(-71.09696847922523 42.30460320294628)"
+  },
+  {
+    "id": 82,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "6611 Main St",
+    "postalCode": "80768",
+    "coordinates": "POINT(-104.95080503394631 39.74335564097492)"
+  },
+  {
+    "id": 83,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "2426 Main St",
+    "postalCode": "69937",
+    "coordinates": "POINT(-122.34054221388055 47.60959306739389)"
+  },
+  {
+    "id": 84,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "9165 Main St",
+    "postalCode": "66161",
+    "coordinates": "POINT(-80.21451738661621 25.743113153724995)"
+  },
+  {
+    "id": 85,
+    "country": "United States",
+    "city": "Miami",
+    "state": "FL",
+    "address": "5178 Main St",
+    "postalCode": "52848",
+    "coordinates": "POINT(-80.22041173471358 25.81562974818474)"
+  },
+  {
+    "id": 86,
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "6193 Main St",
+    "postalCode": "65313",
+    "coordinates": "POINT(-118.29486313356759 34.00537262047486)"
+  },
+  {
+    "id": 87,
+    "country": "United States",
+    "city": "Boston",
+    "state": "MA",
+    "address": "6499 Main St",
+    "postalCode": "10864",
+    "coordinates": "POINT(-71.0235678532345 42.35911256342172)"
+  },
+  {
+    "id": 88,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "5261 Main St",
+    "postalCode": "34082",
+    "coordinates": "POINT(-87.60989592360953 41.91026411951206)"
+  },
+  {
+    "id": 89,
+    "country": "United States",
+    "city": "New York",
+    "state": "NY",
+    "address": "8194 Main St",
+    "postalCode": "85615",
+    "coordinates": "POINT(-73.97610003786227 40.74126627382887)"
+  },
+  {
+    "id": 90,
+    "country": "United States",
+    "city": "Denver",
+    "state": "CO",
+    "address": "6606 Main St",
+    "postalCode": "65852",
+    "coordinates": "POINT(-105.041270003348 39.78188754713193)"
+  },
+  {
+    "id": 91,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "4019 Main St",
+    "postalCode": "71730",
+    "coordinates": "POINT(-122.36515882725492 47.640444922231524)"
+  },
+  {
+    "id": 92,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "1373 Main St",
+    "postalCode": "90508",
+    "coordinates": "POINT(-122.36985967645055 47.65738034535948)"
+  },
+  {
+    "id": 93,
+    "country": "United States",
+    "city": "Austin",
+    "state": "TX",
+    "address": "3474 Main St",
+    "postalCode": "19575",
+    "coordinates": "POINT(-97.75530148956054 30.24483592828105)"
+  },
+  {
+    "id": 94,
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "1836 Main St",
+    "postalCode": "95259",
+    "coordinates": "POINT(-118.29436527447164 34.02126110956035)"
+  },
+  {
+    "id": 95,
+    "country": "United States",
+    "city": "Boston",
+    "state": "MA",
+    "address": "4265 Main St",
+    "postalCode": "67915",
+    "coordinates": "POINT(-71.04712388456976 42.36336125909027)"
+  },
+  {
+    "id": 96,
+    "country": "United States",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "8875 Main St",
+    "postalCode": "37568",
+    "coordinates": "POINT(-118.21417821098123 34.02649282910844)"
+  },
+  {
+    "id": 97,
+    "country": "United States",
+    "city": "Boston",
+    "state": "MA",
+    "address": "4680 Main St",
+    "postalCode": "46525",
+    "coordinates": "POINT(-71.1033891901831 42.41132296514724)"
+  },
+  {
+    "id": 98,
+    "country": "United States",
+    "city": "Chicago",
+    "state": "IL",
+    "address": "6804 Main St",
+    "postalCode": "64691",
+    "coordinates": "POINT(-87.68968624505547 41.9294133399271)"
+  },
+  {
+    "id": 99,
+    "country": "United States",
+    "city": "Austin",
+    "state": "TX",
+    "address": "2655 Main St",
+    "postalCode": "83862",
+    "coordinates": "POINT(-97.69476217643819 30.29626955868396)"
+  },
+  {
+    "id": 100,
+    "country": "United States",
+    "city": "Seattle",
+    "state": "WA",
+    "address": "6562 Main St",
+    "postalCode": "36232",
+    "coordinates": "POINT(-122.28634695104017 47.6223218485551)"
+  }
+]

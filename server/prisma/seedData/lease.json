@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 5244,
+    "deposit": 5244,
+    "propertyId": 1,
+    "tenantCognitoId": "us-east-1:tenant-0034"
+  },
+  {
+    "id": 2,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 2405,
+    "deposit": 2405,
+    "propertyId": 2,
+    "tenantCognitoId": "us-east-1:tenant-0020"
+  },
+  {
+    "id": 3,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 4967,
+    "deposit": 4967,
+    "propertyId": 3,
+    "tenantCognitoId": "us-east-1:tenant-0024"
+  },
+  {
+    "id": 4,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 4037,
+    "deposit": 4037,
+    "propertyId": 4,
+    "tenantCognitoId": "us-east-1:tenant-0002"
+  },
+  {
+    "id": 5,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 2459,
+    "deposit": 2459,
+    "propertyId": 5,
+    "tenantCognitoId": "us-east-1:tenant-0009"
+  },
+  {
+    "id": 6,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 5134,
+    "deposit": 5134,
+    "propertyId": 6,
+    "tenantCognitoId": "us-east-1:tenant-0035"
+  },
+  {
+    "id": 7,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 1700,
+    "deposit": 1700,
+    "propertyId": 7,
+    "tenantCognitoId": "us-east-1:tenant-0029"
+  },
+  {
+    "id": 8,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 2581,
+    "deposit": 2581,
+    "propertyId": 8,
+    "tenantCognitoId": "us-east-1:tenant-0028"
+  },
+  {
+    "id": 9,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 3618,
+    "deposit": 3618,
+    "propertyId": 9,
+    "tenantCognitoId": "us-east-1:tenant-0009"
+  },
+  {
+    "id": 10,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 5765,
+    "deposit": 5765,
+    "propertyId": 10,
+    "tenantCognitoId": "us-east-1:tenant-0023"
+  },
+  {
+    "id": 11,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 5154,
+    "deposit": 5154,
+    "propertyId": 11,
+    "tenantCognitoId": "us-east-1:tenant-0012"
+  },
+  {
+    "id": 12,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 4128,
+    "deposit": 4128,
+    "propertyId": 12,
+    "tenantCognitoId": "us-east-1:tenant-0021"
+  },
+  {
+    "id": 13,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 4286,
+    "deposit": 4286,
+    "propertyId": 13,
+    "tenantCognitoId": "us-east-1:tenant-0009"
+  },
+  {
+    "id": 14,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 5926,
+    "deposit": 5926,
+    "propertyId": 14,
+    "tenantCognitoId": "us-east-1:tenant-0038"
+  },
+  {
+    "id": 15,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 5843,
+    "deposit": 5843,
+    "propertyId": 15,
+    "tenantCognitoId": "us-east-1:tenant-0033"
+  },
+  {
+    "id": 16,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 3786,
+    "deposit": 3786,
+    "propertyId": 16,
+    "tenantCognitoId": "us-east-1:tenant-0012"
+  },
+  {
+    "id": 17,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 4043,
+    "deposit": 4043,
+    "propertyId": 17,
+    "tenantCognitoId": "us-east-1:tenant-0001"
+  },
+  {
+    "id": 18,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 2774,
+    "deposit": 2774,
+    "propertyId": 18,
+    "tenantCognitoId": "us-east-1:tenant-0029"
+  },
+  {
+    "id": 19,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 5833,
+    "deposit": 5833,
+    "propertyId": 19,
+    "tenantCognitoId": "us-east-1:tenant-0023"
+  },
+  {
+    "id": 20,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 3586,
+    "deposit": 3586,
+    "propertyId": 20,
+    "tenantCognitoId": "us-east-1:tenant-0007"
+  },
+  {
+    "id": 21,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 5765,
+    "deposit": 5765,
+    "propertyId": 21,
+    "tenantCognitoId": "us-east-1:tenant-0016"
+  },
+  {
+    "id": 22,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 4716,
+    "deposit": 4716,
+    "propertyId": 22,
+    "tenantCognitoId": "us-east-1:tenant-0020"
+  },
+  {
+    "id": 23,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 3541,
+    "deposit": 3541,
+    "propertyId": 23,
+    "tenantCognitoId": "us-east-1:tenant-0035"
+  },
+  {
+    "id": 24,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 5837,
+    "deposit": 5837,
+    "propertyId": 24,
+    "tenantCognitoId": "us-east-1:tenant-0030"
+  },
+  {
+    "id": 25,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 3606,
+    "deposit": 3606,
+    "propertyId": 25,
+    "tenantCognitoId": "us-east-1:tenant-0004"
+  },
+  {
+    "id": 26,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 2678,
+    "deposit": 2678,
+    "propertyId": 26,
+    "tenantCognitoId": "us-east-1:tenant-0002"
+  },
+  {
+    "id": 27,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 5520,
+    "deposit": 5520,
+    "propertyId": 27,
+    "tenantCognitoId": "us-east-1:tenant-0001"
+  },
+  {
+    "id": 28,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 2414,
+    "deposit": 2414,
+    "propertyId": 28,
+    "tenantCognitoId": "us-east-1:tenant-0031"
+  },
+  {
+    "id": 29,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 3234,
+    "deposit": 3234,
+    "propertyId": 29,
+    "tenantCognitoId": "us-east-1:tenant-0019"
+  },
+  {
+    "id": 30,
+    "startDate": "2026-02-24T15:49:05.122Z",
+    "endDate": "2027-02-24T15:49:05.122Z",
+    "rent": 5875,
+    "deposit": 5875,
+    "propertyId": 30,
+    "tenantCognitoId": "us-east-1:tenant-0033"
+  }
+]
