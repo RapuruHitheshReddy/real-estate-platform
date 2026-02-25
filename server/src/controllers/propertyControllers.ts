@@ -266,7 +266,8 @@ export const createProperty = async (
   res: Response
 ): Promise<void> => {
   try {
-    const files = req.files as Express.Multer.File[];
+    const files = (req.files as Express.Multer.File[]) || [];
+
     const {
       address,
       city,
@@ -277,8 +278,33 @@ export const createProperty = async (
       ...propertyData
     } = req.body;
 
-    const photoUrls = await Promise.all(
-      files.map(async (file) => {
+    /* -----------------------------
+       BASIC VALIDATION
+    ------------------------------ */
+
+    if (!managerCognitoId) {
+      res.status(400).json({ message: "Manager ID is required" });
+      return;
+    }
+
+    if (!address || !city || !country) {
+      res.status(400).json({ message: "Location fields are required" });
+      return;
+    }
+
+    if (!files.length) {
+      res.status(400).json({ message: "At least one photo is required" });
+      return;
+    }
+
+    /* -----------------------------
+       UPLOAD IMAGES TO S3
+    ------------------------------ */
+
+    const photoUrls: string[] = [];
+
+    for (const file of files) {
+      try {
         const uploadParams = {
           Bucket: process.env.S3_BUCKET_NAME!,
           Key: `properties/${Date.now()}-${file.originalname}`,
@@ -291,63 +317,138 @@ export const createProperty = async (
           params: uploadParams,
         }).done();
 
-        return uploadResult.Location;
-      })
-    );
-
-    const geocodingUrl = `https://nominatim.openstreetmap.org/search?${new URLSearchParams(
-      {
-        street: address,
-        city,
-        country,
-        postalcode: postalCode,
-        format: "json",
-        limit: "1",
+        if (uploadResult?.Location) {
+          photoUrls.push(uploadResult.Location);
+        }
+      } catch (err) {
+        console.error("S3 upload failed:", err);
       }
-    ).toString()}`;
-    const geocodingResponse = await axios.get(geocodingUrl, {
-      headers: {
-        "User-Agent": "RealEstateApp (justsomedummyemail@gmail.com",
-      },
-    });
-    const [longitude, latitude] =
-      geocodingResponse.data[0]?.lon && geocodingResponse.data[0]?.lat
-        ? [
-            parseFloat(geocodingResponse.data[0]?.lon),
-            parseFloat(geocodingResponse.data[0]?.lat),
-          ]
-        : [0, 0];
+    }
 
-    // create location
+    if (!photoUrls.length) {
+      res.status(500).json({ message: "Image upload failed" });
+      return;
+    }
+
+    /* -----------------------------
+       GEOCODING
+    ------------------------------ */
+
+    let longitude = 0;
+    let latitude = 0;
+
+    try {
+      const geocodingUrl = `https://nominatim.openstreetmap.org/search?${new URLSearchParams(
+        {
+          street: address,
+          city,
+          country,
+          postalcode: postalCode,
+          format: "json",
+          limit: "1",
+        }
+      ).toString()}`;
+
+      const geocodingResponse = await axios.get(geocodingUrl, {
+        headers: {
+          "User-Agent": "RentifulApp (support@rentiful.com)",
+        },
+      });
+
+      if (geocodingResponse.data?.length) {
+        longitude = parseFloat(geocodingResponse.data[0].lon);
+        latitude = parseFloat(geocodingResponse.data[0].lat);
+      }
+    } catch (err) {
+      console.warn("Geocoding failed, using fallback coordinates");
+    }
+
+    /* -----------------------------
+       CREATE LOCATION
+    ------------------------------ */
+
     const [location] = await prisma.$queryRaw<Location[]>`
-      INSERT INTO "Location" (address, city, state, country, "postalCode", coordinates)
-      VALUES (${address}, ${city}, ${state}, ${country}, ${postalCode}, ST_SetSRID(ST_MakePoint(${longitude}, ${latitude}), 4326))
-      RETURNING id, address, city, state, country, "postalCode", ST_AsText(coordinates) as coordinates;
+      INSERT INTO "Location" 
+      (address, city, state, country, "postalCode", coordinates)
+      VALUES (
+        ${address},
+        ${city},
+        ${state},
+        ${country},
+        ${postalCode},
+        ST_SetSRID(ST_MakePoint(${longitude}, ${latitude}), 4326)
+      )
+      RETURNING 
+        id, address, city, state, country, "postalCode",
+        ST_AsText(coordinates) as coordinates;
     `;
 
-    // create property
+    if (!location) {
+      res.status(500).json({ message: "Failed to create location" });
+      return;
+    }
+
+    /* -----------------------------
+       PARSE ARRAYS SAFELY
+    ------------------------------ */
+
+    let amenities: string[] = [];
+    let highlights: string[] = [];
+
+    try {
+      amenities =
+        typeof propertyData.amenities === "string"
+          ? JSON.parse(propertyData.amenities)
+          : [];
+
+      highlights =
+        typeof propertyData.highlights === "string"
+          ? JSON.parse(propertyData.highlights)
+          : [];
+    } catch (err) {
+      res.status(400).json({
+        message: "Invalid amenities or highlights format",
+      });
+      return;
+    }
+
+    /* -----------------------------
+       CLEAN DATA
+    ------------------------------ */
+
+    delete propertyData.amenities;
+    delete propertyData.highlights;
+
+    /* -----------------------------
+       CREATE PROPERTY
+    ------------------------------ */
+
     const newProperty = await prisma.property.create({
       data: {
         ...propertyData,
+
         photoUrls,
         locationId: location.id,
         managerCognitoId,
-        amenities:
-          typeof propertyData.amenities === "string"
-            ? propertyData.amenities.split(",")
-            : [],
-        highlights:
-          typeof propertyData.highlights === "string"
-            ? propertyData.highlights.split(",")
-            : [],
-        isPetsAllowed: propertyData.isPetsAllowed === "true",
-        isParkingIncluded: propertyData.isParkingIncluded === "true",
-        pricePerMonth: parseFloat(propertyData.pricePerMonth),
-        securityDeposit: parseFloat(propertyData.securityDeposit),
-        applicationFee: parseFloat(propertyData.applicationFee),
-        beds: parseInt(propertyData.beds),
-        baths: parseFloat(propertyData.baths),
-        squareFeet: parseInt(propertyData.squareFeet),
+
+        amenities,
+        highlights,
+
+        isPetsAllowed:
+          propertyData.isPetsAllowed === true ||
+          propertyData.isPetsAllowed === "true",
+
+        isParkingIncluded:
+          propertyData.isParkingIncluded === true ||
+          propertyData.isParkingIncluded === "true",
+
+        pricePerMonth: Number(propertyData.pricePerMonth),
+        securityDeposit: Number(propertyData.securityDeposit),
+        applicationFee: Number(propertyData.applicationFee),
+
+        beds: Number(propertyData.beds),
+        baths: Number(propertyData.baths),
+        squareFeet: Number(propertyData.squareFeet),
       },
       include: {
         location: true,
@@ -357,11 +458,14 @@ export const createProperty = async (
 
     res.status(201).json(newProperty);
   } catch (err: any) {
-  console.error("CREATE PROPERTY ERROR:", err);
-  res.status(500).json({
-    message: "Error creating property",
-    error: err.message,
-    stack: err.stack
-  });
-}
+    console.error("CREATE PROPERTY ERROR:", err);
+
+    res.status(500).json({
+      message: "Error creating property",
+      error:
+        process.env.NODE_ENV === "development"
+          ? err.message
+          : "Internal server error",
+    });
+  }
 };
