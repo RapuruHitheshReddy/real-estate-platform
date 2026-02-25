@@ -91,14 +91,14 @@ const NewProperty = () => {
 
   const toggleArrayValue = (
     field: "amenities" | "highlights",
-    value: string
+    value: string,
   ) => {
     const current = form.getValues(field) || [];
 
     if (current.includes(value)) {
       form.setValue(
         field,
-        current.filter((v) => v !== value)
+        current.filter((v) => v !== value),
       );
     } else {
       form.setValue(field, [...current, value]);
@@ -114,10 +114,7 @@ const NewProperty = () => {
 
       <div className="bg-white rounded-2xl shadow-sm border p-8">
         <Form {...form}>
-          <form
-            onSubmit={form.handleSubmit(onSubmit)}
-            className="space-y-14"
-          >
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-14">
             {/* Basic Info */}
             <section>
               <div className="flex items-center gap-2 mb-6">
@@ -250,8 +247,9 @@ const NewProperty = () => {
 
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {Object.keys(HighlightEnum).map((highlight) => {
-                  const selected =
-                    form.watch("highlights")?.includes(highlight);
+                  const selected = form
+                    .watch("highlights")
+                    ?.includes(highlight);
 
                   return (
                     <label
@@ -314,7 +312,7 @@ const NewProperty = () => {
             <Button
               type="submit"
               disabled={isLoading}
-              className="w-full h-12 text-base bg-primary-700 hover:bg-primary-800"
+              className="w-full h-12 text-base bg-primary-700 hover:bg-primary-800 text-white disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {isLoading ? (
                 <>
