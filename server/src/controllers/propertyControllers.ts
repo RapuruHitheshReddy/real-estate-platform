@@ -5,6 +5,8 @@ import { S3Client } from "@aws-sdk/client-s3";
 import { Location } from "@prisma/client";
 import { Upload } from "@aws-sdk/lib-storage";
 import axios from "axios";
+import fs from "fs";
+import crypto from "crypto";
 
 const prisma = new PrismaClient();
 
@@ -283,7 +285,7 @@ export const getProperty = async (
 
 export const createProperty = async (
   req: Request,
-  res: Response,
+  res: Response
 ): Promise<void> => {
   try {
     const files = (req.files as Express.Multer.File[]) || [];
@@ -325,10 +327,25 @@ export const createProperty = async (
 
     for (const file of files) {
       try {
+        /* handle memoryStorage OR diskStorage */
+        const fileBody =
+          file.buffer && file.buffer.length
+            ? file.buffer
+            : file.path
+            ? fs.readFileSync(file.path)
+            : null;
+
+        if (!fileBody) {
+          console.warn("Skipping empty file:", file.originalname);
+          continue;
+        }
+
+        const key = `properties/${Date.now()}-${crypto.randomUUID()}-${file.originalname}`;
+
         const uploadParams = {
           Bucket: process.env.S3_BUCKET_NAME!,
-          Key: `properties/${Date.now()}-${file.originalname}`,
-          Body: file.buffer,
+          Key: key,
+          Body: fileBody,
           ContentType: file.mimetype,
         };
 
@@ -366,7 +383,7 @@ export const createProperty = async (
           postalcode: postalCode,
           format: "json",
           limit: "1",
-        },
+        }
       ).toString()}`;
 
       const geocodingResponse = await axios.get(geocodingUrl, {
@@ -388,7 +405,7 @@ export const createProperty = async (
     ------------------------------ */
 
     const [location] = await prisma.$queryRaw<Location[]>`
-      INSERT INTO "Location" 
+      INSERT INTO "Location"
       (address, city, state, country, "postalCode", coordinates)
       VALUES (
         ${address},
@@ -398,7 +415,7 @@ export const createProperty = async (
         ${postalCode},
         ST_SetSRID(ST_MakePoint(${longitude}, ${latitude}), 4326)
       )
-      RETURNING 
+      RETURNING
         id, address, city, state, country, "postalCode",
         ST_AsText(coordinates) as coordinates;
     `;
@@ -425,19 +442,26 @@ export const createProperty = async (
         typeof propertyData.highlights === "string"
           ? JSON.parse(propertyData.highlights)
           : [];
-    } catch (err) {
+    } catch {
       res.status(400).json({
         message: "Invalid amenities or highlights format",
       });
       return;
     }
 
-    /* -----------------------------
-       CLEAN DATA
-    ------------------------------ */
-
     delete propertyData.amenities;
     delete propertyData.highlights;
+
+    /* -----------------------------
+       NUMBER SAFETY
+    ------------------------------ */
+
+    const pricePerMonth = Number(propertyData.pricePerMonth) || 0;
+    const securityDeposit = Number(propertyData.securityDeposit) || 0;
+    const applicationFee = Number(propertyData.applicationFee) || 0;
+    const beds = Number(propertyData.beds) || 0;
+    const baths = Number(propertyData.baths) || 0;
+    const squareFeet = Number(propertyData.squareFeet) || 0;
 
     /* -----------------------------
        CREATE PROPERTY
@@ -462,13 +486,13 @@ export const createProperty = async (
           propertyData.isParkingIncluded === true ||
           propertyData.isParkingIncluded === "true",
 
-        pricePerMonth: Number(propertyData.pricePerMonth),
-        securityDeposit: Number(propertyData.securityDeposit),
-        applicationFee: Number(propertyData.applicationFee),
+        pricePerMonth,
+        securityDeposit,
+        applicationFee,
 
-        beds: Number(propertyData.beds),
-        baths: Number(propertyData.baths),
-        squareFeet: Number(propertyData.squareFeet),
+        beds,
+        baths,
+        squareFeet,
       },
       include: {
         location: true,
