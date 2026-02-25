@@ -16,7 +16,7 @@ const Favorites = () => {
     authUser?.cognitoInfo?.userId || "",
     {
       skip: !authUser?.cognitoInfo?.userId,
-    }
+    },
   );
 
   const {
@@ -25,7 +25,7 @@ const Favorites = () => {
     error,
   } = useGetPropertiesQuery(
     { favoriteIds: tenant?.favorites?.map((fav: { id: number }) => fav.id) },
-    { skip: !tenant?.favorites || tenant?.favorites.length === 0 }
+    { skip: !tenant?.favorites || tenant?.favorites.length === 0 },
   );
 
   if (isLoading) return <Loading />;
@@ -45,7 +45,7 @@ const Favorites = () => {
             isFavorite={true}
             onFavoriteToggle={() => {}}
             showFavoriteButton={false}
-            propertyLink={`/tenants/residences/${property.id}`}
+            propertyLink={`/search/${property.id}`}
           />
         ))}
       </div>

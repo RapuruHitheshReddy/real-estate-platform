@@ -14,7 +14,7 @@ const s3Client = new S3Client({
 
 export const getProperties = async (
   req: Request,
-  res: Response
+  res: Response,
 ): Promise<void> => {
   try {
     const {
@@ -92,28 +92,24 @@ export const getProperties = async (
 
     if (propertyType && propertyType !== "any") {
       where.push(
-        Prisma.sql`p."propertyType" = ${propertyType}::"PropertyType"`
+        Prisma.sql`p."propertyType" = ${propertyType}::"PropertyType"`,
       );
     }
 
     /* AMENITIES */
 
     if (amenities && amenities !== "any") {
-      const amenitiesArray = String(amenities)
-        .split(",")
-        .filter(Boolean);
+      const amenitiesArray = String(amenities).split(",").filter(Boolean);
 
       if (amenitiesArray.length) {
         where.push(
           Prisma.sql`
           p.amenities @> ARRAY[
             ${Prisma.join(
-              amenitiesArray.map(
-                (a) => Prisma.sql`${a}::"Amenity"`
-              )
+              amenitiesArray.map((a) => Prisma.sql`${a}::"Amenity"`),
             )}
           ]::"Amenity"[]
-        `
+        `,
         );
       }
     }
@@ -131,7 +127,7 @@ export const getProperties = async (
           OR l.country ILIKE ${search}
           OR l.address ILIKE ${search}
         )
-      `
+      `,
       );
     }
 
@@ -149,12 +145,12 @@ export const getProperties = async (
             WHERE lease."propertyId" = p.id
             AND lease."endDate" >= ${date.toISOString()}
           )
-        `
+        `,
         );
       }
     }
 
-    /* GEO SEARCH (ONLY WHEN NO TEXT SEARCH) */
+    /* GEO SEARCH */
 
     const lat = Number(latitude);
     const lng = Number(longitude);
@@ -169,7 +165,7 @@ export const getProperties = async (
           ST_SetSRID(ST_MakePoint(${lng}, ${lat}), 4326)::geography,
           ${radiusMeters}
         )
-      `
+      `,
       );
     }
 
@@ -185,6 +181,7 @@ export const getProperties = async (
     const query = Prisma.sql`
       SELECT 
         p.*,
+
         json_build_object(
           'id', l.id,
           'address', l.address,
@@ -196,14 +193,25 @@ export const getProperties = async (
             'longitude', ST_X(l.coordinates::geometry),
             'latitude', ST_Y(l.coordinates::geometry)
           )
-        ) as location
+        ) as location,
+
+        json_build_object(
+          'name', m.name,
+          'email', m.email,
+          'phoneNumber', m."phoneNumber",
+          'cognitoId', m."cognitoId"
+        ) as manager
+
       FROM "Property" p
       JOIN "Location" l ON p."locationId" = l.id
+      LEFT JOIN "Manager" m ON p."managerCognitoId" = m."cognitoId"
+
       ${
         where.length
           ? Prisma.sql`WHERE ${Prisma.join(where, " AND ")}`
           : Prisma.empty
       }
+
       ORDER BY p."postedDate" DESC
       LIMIT ${limitNum}
       OFFSET ${offset}
@@ -223,47 +231,59 @@ export const getProperties = async (
 
 export const getProperty = async (
   req: Request,
-  res: Response
+  res: Response,
 ): Promise<void> => {
   try {
     const { id } = req.params;
+
     const property = await prisma.property.findUnique({
       where: { id: Number(id) },
       include: {
         location: true,
+        manager: true,
       },
     });
 
-    if (property) {
-      const coordinates: { coordinates: string }[] =
-        await prisma.$queryRaw`SELECT ST_asText(coordinates) as coordinates from "Location" where id = ${property.location.id}`;
-
-      const geoJSON: any = wktToGeoJSON(coordinates[0]?.coordinates || "");
-      const longitude = geoJSON.coordinates[0];
-      const latitude = geoJSON.coordinates[1];
-
-      const propertyWithCoordinates = {
-        ...property,
-        location: {
-          ...property.location,
-          coordinates: {
-            longitude,
-            latitude,
-          },
-        },
-      };
-      res.json(propertyWithCoordinates);
+    if (!property) {
+      res.status(404).json({ message: "Property not found" });
+      return;
     }
+
+    const coordinates: { coordinates: string }[] = await prisma.$queryRaw`
+        SELECT ST_AsText(coordinates) as coordinates
+        FROM "Location"
+        WHERE id = ${property.location.id}
+      `;
+
+    const geoJSON: any = wktToGeoJSON(coordinates[0]?.coordinates || "");
+    const longitude = geoJSON?.coordinates?.[0] ?? null;
+    const latitude = geoJSON?.coordinates?.[1] ?? null;
+
+    const propertyWithCoordinates = {
+      ...property,
+      location: {
+        ...property.location,
+        coordinates: {
+          longitude,
+          latitude,
+        },
+      },
+    };
+
+    res.json(propertyWithCoordinates);
   } catch (err: any) {
-    res
-      .status(500)
-      .json({ message: `Error retrieving property: ${err.message}` });
+    console.error("GET PROPERTY ERROR:", err);
+
+    res.status(500).json({
+      message: "Error retrieving property",
+      error: err.message,
+    });
   }
 };
 
 export const createProperty = async (
   req: Request,
-  res: Response
+  res: Response,
 ): Promise<void> => {
   try {
     const files = (req.files as Express.Multer.File[]) || [];
@@ -346,7 +366,7 @@ export const createProperty = async (
           postalcode: postalCode,
           format: "json",
           limit: "1",
-        }
+        },
       ).toString()}`;
 
       const geocodingResponse = await axios.get(geocodingUrl, {

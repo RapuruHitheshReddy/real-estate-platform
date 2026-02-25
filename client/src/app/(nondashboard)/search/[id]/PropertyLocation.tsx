@@ -6,75 +6,115 @@ import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import React, { useEffect, useRef } from "react";
 
-mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN as string;
+mapboxgl.accessToken =
+  process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN || "";
 
 const PropertyLocation = ({ propertyId }: PropertyDetailsProps) => {
   const { data: property, isError, isLoading } =
     useGetPropertyQuery(propertyId);
 
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
+  const mapRef = useRef<mapboxgl.Map | null>(null);
 
+  /* ================= Map Initialization ================= */
   useEffect(() => {
     if (!mapContainerRef.current) return;
-    if (isLoading || isError || !property) return;
+    if (!property?.location?.coordinates) return;
+    if (!mapboxgl.accessToken) return;
 
-    const lng = property.location?.coordinates?.longitude;
-    const lat = property.location?.coordinates?.latitude;
+    const { longitude, latitude } = property.location.coordinates;
 
-    if (lng == null || lat == null) return;
+    if (longitude == null || latitude == null) return;
 
-    const center: [number, number] = [lng, lat];
+    // Prevent re-initializing map
+    if (mapRef.current) return;
+
+    const center: [number, number] = [longitude, latitude];
 
     const map = new mapboxgl.Map({
-      container: mapContainerRef.current!,
+      container: mapContainerRef.current,
       style: "mapbox://styles/mapbox/light-v11",
       center,
       zoom: 14,
     });
 
-    const marker = new mapboxgl.Marker({ color: "#000000" })
+    map.addControl(new mapboxgl.NavigationControl(), "top-right");
+
+    new mapboxgl.Marker({ color: "#111827" })
       .setLngLat(center)
       .addTo(map);
 
-    return () => map.remove();
-  }, [property, isError, isLoading]);
+    mapRef.current = map;
 
-  if (isLoading) return <>Loading...</>;
-  if (isError || !property) return <>Property not Found</>;
+    return () => {
+      map.remove();
+      mapRef.current = null;
+    };
+  }, [property]);
+
+  /* ================= Loading State ================= */
+  if (isLoading) {
+    return (
+      <div className="py-16 animate-pulse space-y-4">
+        <div className="h-6 w-48 bg-gray-200 rounded" />
+        <div className="h-[300px] bg-gray-200 rounded-xl" />
+      </div>
+    );
+  }
+
+  if (isError || !property) {
+    return (
+      <div className="py-16 text-center text-gray-500">
+        Location information not available
+      </div>
+    );
+  }
+
+  const address =
+    property.location?.address ||
+    "Address not available";
+
+  const googleMapsLink = `https://maps.google.com/?q=${encodeURIComponent(
+    address
+  )}`;
 
   return (
-    <div className="py-16">
-      <h3 className="text-xl font-semibold text-primary-800 dark:text-primary-100">
-        Map and Location
-      </h3>
+    <section className="py-16 space-y-6">
+      <div className="flex justify-between items-start flex-wrap gap-4">
+        <div>
+          <h3 className="text-2xl font-semibold mb-2">
+            Location
+          </h3>
 
-      <div className="flex justify-between items-center text-sm text-primary-500 mt-2">
-        <div className="flex items-center text-gray-500">
-          <MapPin className="w-4 h-4 mr-1 text-gray-700" />
-          Property Address:
-          <span className="ml-2 font-semibold text-gray-700">
-            {property.location?.address || "Address not available"}
-          </span>
+          <div className="flex items-center text-gray-600 text-sm">
+            <MapPin className="w-4 h-4 mr-2 text-gray-700" />
+            <span className="font-medium">{address}</span>
+          </div>
         </div>
 
         <a
-          href={`https://maps.google.com/?q=${encodeURIComponent(
-            property.location?.address || ""
-          )}`}
+          href={googleMapsLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center hover:underline gap-2 text-primary-600"
+          className="flex items-center gap-2 px-4 py-2 rounded-lg border hover:bg-gray-50 transition text-sm font-medium"
         >
-          <Compass className="w-5 h-5" />
+          <Compass className="w-4 h-4" />
           Get Directions
         </a>
       </div>
 
-      <div
-        className="relative mt-4 h-[300px] rounded-lg overflow-hidden"
-        ref={mapContainerRef}
-      />
-    </div>
+      {/* Map Container */}
+      {mapboxgl.accessToken ? (
+        <div
+          ref={mapContainerRef}
+          className="h-[350px] rounded-2xl overflow-hidden shadow-sm border"
+        />
+      ) : (
+        <div className="h-[350px] flex items-center justify-center border rounded-2xl bg-gray-50 text-gray-500">
+          Map unavailable (Missing Mapbox token)
+        </div>
+      )}
+    </section>
   );
 };
 

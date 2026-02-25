@@ -1,11 +1,19 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
-import { useGetAuthUserQuery } from "@/state/api";
-import { Phone } from "lucide-react";
+import { useGetAuthUserQuery, useGetPropertyQuery } from "@/state/api";
+import { Phone, CalendarDays, ShieldCheck } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const ContactWidget = ({ onOpenModal }: ContactWidgetProps) => {
+type ContactWidgetProps = {
+  propertyId: number;
+  onOpenModal: () => void;
+};
+
+const ContactWidget = ({ onOpenModal, propertyId }: ContactWidgetProps) => {
   const { data: authUser } = useGetAuthUserQuery();
+  const { data: property } = useGetPropertyQuery(propertyId);
   const router = useRouter();
 
   const handleButtonClick = () => {
@@ -15,36 +23,75 @@ const ContactWidget = ({ onOpenModal }: ContactWidgetProps) => {
       router.push("/signin");
     }
   };
+  
+ console.log("PROPERTY DATA:", property);
+console.log("MANAGER:", property?.manager);
+
+  const managerPhone =
+    property?.manager?.phoneNumber?.trim() ||
+    property?.manager?.phone?.trim() ||
+    "Contact via application";
+
+  const managerName =
+    property?.manager?.name ||
+    property?.manager?.fullName ||
+    "Property Manager";
 
   return (
-    <div className="bg-white border border-primary-200 rounded-2xl p-7 h-fit min-w-[300px]">
-      {/* Contact Property */}
-      <div className="flex items-center gap-5 mb-4 border border-primary-200 p-4 rounded-xl">
-        <div className="flex items-center p-4 bg-primary-900 rounded-full">
-          <Phone className="text-primary-50" size={15} />
-        </div>
-        <div>
-          <p>Contact This Property</p>
-          <div className="text-lg font-bold text-primary-800">
-            (424) 340-5574
+    <aside className="sticky top-24 w-full md:min-w-[340px]">
+      <div className="bg-white border border-gray-200 shadow-sm rounded-2xl p-6 space-y-6">
+
+        {/* Contact Box */}
+        <div className="flex items-center gap-4 border rounded-xl p-4 bg-gray-50">
+          <div className="flex items-center justify-center w-11 h-11 rounded-full bg-primary-700">
+            <Phone className="text-white" size={16} />
+          </div>
+
+          <div className="leading-tight">
+            <p className="font-semibold text-gray-900">
+              {managerName}
+            </p>
+
+            <p className="text-sm text-gray-600">
+              Call: {managerPhone}
+            </p>
           </div>
         </div>
-      </div>
-      <Button
-        className="w-full bg-primary-700 text-white hover:bg-primary-600"
-        onClick={handleButtonClick}
-      >
-        {authUser ? "Submit Application" : "Sign In to Apply"}
-      </Button>
 
-      <hr className="my-4" />
-      <div className="text-sm">
-        <div className="text-primary-600 mb-1">Language: English, Bahasa.</div>
-        <div className="text-primary-600">
-          Open by appointment on Monday - Sunday
+        {/* CTA */}
+        <Button
+          onClick={handleButtonClick}
+          className="w-full h-12 text-base font-semibold bg-primary-700 hover:bg-primary-600 text-white shadow-sm"
+        >
+          {authUser ? "Apply for this Property" : "Sign in to Apply"}
+        </Button>
+
+        {/* Trust */}
+        <div className="space-y-3 text-sm text-gray-600">
+          <div className="flex items-center gap-2">
+            <ShieldCheck size={16} className="text-green-600" />
+            Verified listing
+          </div>
+
+          <div className="flex items-center gap-2">
+            <CalendarDays size={16} />
+            Open by appointment
+          </div>
         </div>
+
+        <hr />
+
+        <div className="text-sm text-gray-500 space-y-1">
+          <p>
+            Languages: <span className="text-gray-700">English, Bahasa</span>
+          </p>
+          <p>
+            Available: <span className="text-gray-700">Mon – Sun</span>
+          </p>
+        </div>
+
       </div>
-    </div>
+    </aside>
   );
 };
 
