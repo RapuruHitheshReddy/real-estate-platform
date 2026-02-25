@@ -2,100 +2,113 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { Search, ClipboardCheck, Home } from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    },
+    transition: { staggerChildren: 0.15 },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0 },
 };
 
+const steps = [
+  {
+    icon: Search,
+    title: "Discover Homes",
+    description:
+      "Browse curated rental listings and find a place that fits your lifestyle.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Apply Easily",
+    description:
+      "Submit rental applications and manage everything from one platform.",
+  },
+  {
+    icon: Home,
+    title: "Move In Comfort",
+    description:
+      "Secure your new home and enjoy a smooth renting experience.",
+  },
+];
+
 const DiscoverSection = () => {
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.8 }}
-      variants={containerVariants}
-      className="py-12 bg-white mb-16"
-    >
-      <div className="max-w-6xl xl:max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
-        <motion.div variants={itemVariants} className="my-12 text-center">
-          <h2 className="text-3xl font-semibold leading-tight text-gray-800">
-            Discover
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Find your Dream Rental Property Today!
-          </p>
-          <p className="mt-2 text-gray-500 max-w-3xl mx-auto">
-            Searching for your dream rental property has never been easier. With
-            our user-friendly search feature, you can quickly find the perfect
-            home that meets all your needs. Start your search today and discover
-            your dream rental property!
-          </p>
+    <section className="py-28 bg-white">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+
+        {/* Header */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text-center mb-20"
+        >
+          <motion.h2
+            variants={itemVariants}
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 tracking-tight"
+          >
+            Renting Made Simple
+          </motion.h2>
+
+          <motion.p
+            variants={itemVariants}
+            className="mt-4 text-gray-500 max-w-xl mx-auto"
+          >
+            A simple journey from discovering homes to moving in.
+          </motion.p>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 xl:gap-16 text-center">
-          {[
-            {
-              imageSrc: "/landing-icon-wand.png",
-              title: "Search for Properties",
-              description:
-                "Browse through our extensive collection of rental properties in your desired location.",
-            },
-            {
-              imageSrc: "/landing-icon-calendar.png",
-              title: "Book Your Rental",
-              description:
-                "Once you've found the perfect rental property, easily book it online with just a few clicks.",
-            },
-            {
-              imageSrc: "/landing-icon-heart.png",
-              title: "Enjoy your New Home",
-              description:
-                "Move into your new rental property and start enjoying your dream home.",
-            },
-          ].map((card, index) => (
-            <motion.div key={index} variants={itemVariants}>
-              <DiscoverCard {...card} />
-            </motion.div>
-          ))}
-        </div>
+
+        {/* Cards */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10"
+        >
+          {steps.map((step, index) => {
+            const Icon = step.icon;
+
+            return (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                whileHover={{ y: -6 }}
+                className="group bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300"
+              >
+                {/* icon */}
+                <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-secondary-50 text-secondary-600 mb-6">
+                  <Icon size={26} strokeWidth={2} />
+                </div>
+
+                {/* title */}
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {step.title}
+                </h3>
+
+                {/* description */}
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {step.description}
+                </p>
+
+                {/* bottom accent */}
+                <div className="mt-6 h-[2px] w-10 bg-secondary-500 rounded-full opacity-70 group-hover:w-16 transition-all" />
+              </motion.div>
+            );
+          })}
+        </motion.div>
+
       </div>
-    </motion.div>
+    </section>
   );
 };
-
-const DiscoverCard = ({
-  imageSrc,
-  title,
-  description,
-}: {
-  imageSrc: string;
-  title: string;
-  description: string;
-}) => (
-  <div className="px-4 py-12 shadow-lg rounded-lg bg-primary-50 md:h-72">
-    <div className="bg-primary-700 p-[0.6rem] rounded-full mb-4 h-10 w-10 mx-auto">
-      <Image
-        src={imageSrc}
-        width={30}
-        height={30}
-        className="w-full h-full"
-        alt={title}
-      />
-    </div>
-    <h3 className="mt-4 text-xl font-medium text-gray-800">{title}</h3>
-    <p className="mt-2 text-base text-gray-500">{description}</p>
-  </div>
-);
 
 export default DiscoverSection;
