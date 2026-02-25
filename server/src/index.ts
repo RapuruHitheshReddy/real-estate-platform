@@ -12,30 +12,41 @@ import propertyRoutes from "./routes/propertyRoutes";
 import leaseRoutes from "./routes/leaseRoutes";
 import applicationRoutes from "./routes/applicationRoutes";
 
-/* CONFIGURATIONS */
+/* CONFIG */
 dotenv.config();
 
 const app = express();
-
-/* IMPORTANT: increase body limits */
-app.use(express.json({ limit: "50mb" }));
-app.use(express.urlencoded({ extended: true, limit: "50mb" }));
 
 /* SECURITY */
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 
+/* CORS */
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    credentials: true,
+  })
+);
+
 /* LOGGING */
 app.use(morgan("common"));
 
-/* CORS */
-app.use(cors());
+/*
+IMPORTANT:
+Do NOT parse multipart here.
+Multer will handle it inside routes.
+*/
+app.use(express.json({ limit: "20mb" }));
+app.use(express.urlencoded({ extended: true }));
 
-/* ROUTES */
+/* HEALTH CHECK */
 app.get("/", (req, res) => {
-  res.send("This is home route");
+  res.send("API is running");
 });
 
+/* ROUTES */
 app.use("/applications", applicationRoutes);
 app.use("/properties", propertyRoutes);
 app.use("/leases", leaseRoutes);
@@ -46,5 +57,5 @@ app.use("/managers", authMiddleware(["manager"]), managerRoutes);
 const port = Number(process.env.PORT) || 3002;
 
 app.listen(port, "0.0.0.0", () => {
-  console.log(`Server running on port ${port}`);
+  console.log(`🚀 Server running on port ${port}`);
 });

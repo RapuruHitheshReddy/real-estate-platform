@@ -7,6 +7,8 @@ import { Upload } from "@aws-sdk/lib-storage";
 import axios from "axios";
 import fs from "fs";
 import crypto from "crypto";
+import { GetObjectCommand } from "@aws-sdk/client-s3";
+import { createHash } from "crypto";
 
 const prisma = new PrismaClient();
 
@@ -288,10 +290,11 @@ export const createProperty = async (
   res: Response
 ): Promise<void> => {
   try {
+    console.log("================================================");
     console.log("---- CREATE PROPERTY REQUEST ----");
 
     console.log("Headers:", req.headers);
-    console.log("Body fields:", Object.keys(req.body));
+    console.log("Body fields:", Object.keys(req.body || {}));
 
     const files = (req.files as Express.Multer.File[]) || [];
 
@@ -324,11 +327,13 @@ export const createProperty = async (
     ------------------------------ */
 
     if (!managerCognitoId) {
+      console.error("Manager ID missing");
       res.status(400).json({ message: "Manager ID is required" });
       return;
     }
 
     if (!address || !city || !country) {
+      console.error("Location fields missing");
       res.status(400).json({ message: "Location fields are required" });
       return;
     }
@@ -347,26 +352,46 @@ export const createProperty = async (
 
     for (const file of files) {
       try {
+        console.log("------------------------------------------------");
         console.log("Processing file:", file.originalname);
 
-        let fileBody: Buffer | null = null;
-
-        if (file.buffer && file.buffer.length) {
-          console.log("Using multer memory buffer");
-          fileBody = file.buffer;
-        } else if (file.path) {
-          console.log("Reading file from disk path:", file.path);
-          fileBody = fs.readFileSync(file.path);
-        }
-
-        if (!fileBody || !fileBody.length) {
-          console.error("❌ Empty file buffer:", file.originalname);
+        if (!file.buffer) {
+          console.error("❌ No buffer present");
           continue;
         }
 
-        console.log("File size going to S3:", fileBody.length);
+        const fileBody = file.buffer;
 
-        const key = `properties/${Date.now()}-${crypto.randomUUID()}-${file.originalname}`;
+        console.log("File size (multer):", file.size);
+        console.log("Buffer length:", fileBody.length);
+
+        /* FILE SIGNATURE */
+        const firstBytes = fileBody.subarray(0, 16).toString("hex");
+        const lastBytes = fileBody
+          .subarray(fileBody.length - 16)
+          .toString("hex");
+
+        console.log("First 16 bytes:", firstBytes);
+        console.log("Last 16 bytes:", lastBytes);
+
+        /*
+          JPEG should start with
+          ffd8ff
+        */
+
+        /* HASH BEFORE UPLOAD */
+        const localHash = crypto
+          .createHash("md5")
+          .update(fileBody)
+          .digest("hex");
+
+        console.log("Local MD5:", localHash);
+
+        const safeName = file.originalname.replace(/[^\w.-]/g, "_");
+
+        const key = `properties/${Date.now()}-${crypto.randomUUID()}-${safeName}`;
+
+        console.log("Uploading to S3 key:", key);
 
         const uploadParams = {
           Bucket: process.env.S3_BUCKET_NAME!,
@@ -375,18 +400,58 @@ export const createProperty = async (
           ContentType: file.mimetype,
         };
 
-        console.log("Uploading to S3:", key);
-
         const uploadResult = await new Upload({
           client: s3Client,
           params: uploadParams,
         }).done();
 
-        console.log("S3 upload result:", uploadResult);
+        console.log("S3 upload success");
+        console.log("Location:", uploadResult.Location);
+        console.log("ETag:", uploadResult.ETag);
+
+        /* -----------------------------
+           VERIFY FILE FROM S3
+        ------------------------------ */
+
+        console.log("Downloading back from S3 to verify integrity");
+
+        const s3Object = await s3Client.send(
+          new GetObjectCommand({
+            Bucket: process.env.S3_BUCKET_NAME!,
+            Key: key,
+          })
+        );
+
+        const chunks: Buffer[] = [];
+
+        await new Promise<void>((resolve, reject) => {
+          s3Object.Body?.on("data", (chunk: Buffer) => chunks.push(chunk));
+          s3Object.Body?.on("end", () => resolve());
+          s3Object.Body?.on("error", reject);
+        });
+
+        const downloadedBuffer = Buffer.concat(chunks);
+
+        console.log("Downloaded size:", downloadedBuffer.length);
+
+        const downloadedHash = crypto
+          .createHash("md5")
+          .update(downloadedBuffer)
+          .digest("hex");
+
+        console.log("Downloaded MD5:", downloadedHash);
+
+        if (localHash !== downloadedHash) {
+          console.error("❌ FILE CORRUPTED DURING TRANSFER");
+        } else {
+          console.log("✅ File integrity verified");
+        }
 
         if (uploadResult?.Location) {
           photoUrls.push(uploadResult.Location);
         }
+
+        console.log("------------------------------------------------");
       } catch (err) {
         console.error("❌ S3 upload failed:", err);
       }
@@ -431,7 +496,7 @@ export const createProperty = async (
       }
 
       console.log("Coordinates:", { longitude, latitude });
-    } catch (err) {
+    } catch {
       console.warn("⚠️ Geocoding failed, using fallback coordinates");
     }
 
@@ -461,7 +526,7 @@ export const createProperty = async (
     }
 
     /* -----------------------------
-       PARSE ARRAYS SAFELY
+       PARSE ARRAYS
     ------------------------------ */
 
     let amenities: string[] = [];
@@ -507,26 +572,20 @@ export const createProperty = async (
     const newProperty = await prisma.property.create({
       data: {
         ...propertyData,
-
         photoUrls,
         locationId: location.id,
         managerCognitoId,
-
         amenities,
         highlights,
-
         isPetsAllowed:
           propertyData.isPetsAllowed === true ||
           propertyData.isPetsAllowed === "true",
-
         isParkingIncluded:
           propertyData.isParkingIncluded === true ||
           propertyData.isParkingIncluded === "true",
-
         pricePerMonth,
         securityDeposit,
         applicationFee,
-
         beds,
         baths,
         squareFeet,
