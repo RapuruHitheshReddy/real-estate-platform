@@ -288,7 +288,26 @@ export const createProperty = async (
   res: Response
 ): Promise<void> => {
   try {
+    console.log("---- CREATE PROPERTY REQUEST ----");
+
+    console.log("Headers:", req.headers);
+    console.log("Body fields:", Object.keys(req.body));
+
     const files = (req.files as Express.Multer.File[]) || [];
+
+    console.log("Files received:", files.length);
+
+    files.forEach((file, i) => {
+      console.log(`File ${i + 1}`, {
+        fieldname: file.fieldname,
+        originalname: file.originalname,
+        mimetype: file.mimetype,
+        size: file.size,
+        hasBuffer: !!file.buffer,
+        bufferLength: file.buffer?.length,
+        path: file.path,
+      });
+    });
 
     const {
       address,
@@ -315,6 +334,7 @@ export const createProperty = async (
     }
 
     if (!files.length) {
+      console.error("❌ No files received from multer");
       res.status(400).json({ message: "At least one photo is required" });
       return;
     }
@@ -327,18 +347,24 @@ export const createProperty = async (
 
     for (const file of files) {
       try {
-        /* handle memoryStorage OR diskStorage */
-        const fileBody =
-          file.buffer && file.buffer.length
-            ? file.buffer
-            : file.path
-            ? fs.readFileSync(file.path)
-            : null;
+        console.log("Processing file:", file.originalname);
 
-        if (!fileBody) {
-          console.warn("Skipping empty file:", file.originalname);
+        let fileBody: Buffer | null = null;
+
+        if (file.buffer && file.buffer.length) {
+          console.log("Using multer memory buffer");
+          fileBody = file.buffer;
+        } else if (file.path) {
+          console.log("Reading file from disk path:", file.path);
+          fileBody = fs.readFileSync(file.path);
+        }
+
+        if (!fileBody || !fileBody.length) {
+          console.error("❌ Empty file buffer:", file.originalname);
           continue;
         }
+
+        console.log("File size going to S3:", fileBody.length);
 
         const key = `properties/${Date.now()}-${crypto.randomUUID()}-${file.originalname}`;
 
@@ -349,20 +375,25 @@ export const createProperty = async (
           ContentType: file.mimetype,
         };
 
+        console.log("Uploading to S3:", key);
+
         const uploadResult = await new Upload({
           client: s3Client,
           params: uploadParams,
         }).done();
 
+        console.log("S3 upload result:", uploadResult);
+
         if (uploadResult?.Location) {
           photoUrls.push(uploadResult.Location);
         }
       } catch (err) {
-        console.error("S3 upload failed:", err);
+        console.error("❌ S3 upload failed:", err);
       }
     }
 
     if (!photoUrls.length) {
+      console.error("❌ No images uploaded to S3");
       res.status(500).json({ message: "Image upload failed" });
       return;
     }
@@ -386,6 +417,8 @@ export const createProperty = async (
         }
       ).toString()}`;
 
+      console.log("Geocoding URL:", geocodingUrl);
+
       const geocodingResponse = await axios.get(geocodingUrl, {
         headers: {
           "User-Agent": "RentifulApp (support@rentiful.com)",
@@ -396,8 +429,10 @@ export const createProperty = async (
         longitude = parseFloat(geocodingResponse.data[0].lon);
         latitude = parseFloat(geocodingResponse.data[0].lat);
       }
+
+      console.log("Coordinates:", { longitude, latitude });
     } catch (err) {
-      console.warn("Geocoding failed, using fallback coordinates");
+      console.warn("⚠️ Geocoding failed, using fallback coordinates");
     }
 
     /* -----------------------------
@@ -467,6 +502,8 @@ export const createProperty = async (
        CREATE PROPERTY
     ------------------------------ */
 
+    console.log("Creating property in DB");
+
     const newProperty = await prisma.property.create({
       data: {
         ...propertyData,
@@ -500,9 +537,11 @@ export const createProperty = async (
       },
     });
 
+    console.log("✅ Property created:", newProperty.id);
+
     res.status(201).json(newProperty);
   } catch (err: any) {
-    console.error("CREATE PROPERTY ERROR:", err);
+    console.error("❌ CREATE PROPERTY ERROR:", err);
 
     res.status(500).json({
       message: "Error creating property",
