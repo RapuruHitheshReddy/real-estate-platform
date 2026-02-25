@@ -5,10 +5,10 @@ import { S3Client } from "@aws-sdk/client-s3";
 import { Location } from "@prisma/client";
 import { Upload } from "@aws-sdk/lib-storage";
 import axios from "axios";
-import fs from "fs";
 import crypto from "crypto";
 import { GetObjectCommand } from "@aws-sdk/client-s3";
-import { createHash } from "crypto";
+
+import { Readable } from "stream";
 
 const prisma = new PrismaClient();
 
@@ -374,11 +374,6 @@ export const createProperty = async (
         console.log("First 16 bytes:", firstBytes);
         console.log("Last 16 bytes:", lastBytes);
 
-        /*
-          JPEG should start with
-          ffd8ff
-        */
-
         /* HASH BEFORE UPLOAD */
         const localHash = crypto
           .createHash("md5")
@@ -422,13 +417,15 @@ export const createProperty = async (
           })
         );
 
+        const stream = s3Object.Body as Readable;
+
         const chunks: Buffer[] = [];
 
-        await new Promise<void>((resolve, reject) => {
-          s3Object.Body?.on("data", (chunk: Buffer) => chunks.push(chunk));
-          s3Object.Body?.on("end", () => resolve());
-          s3Object.Body?.on("error", reject);
-        });
+        for await (const chunk of stream) {
+          chunks.push(
+            Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk)
+          );
+        }
 
         const downloadedBuffer = Buffer.concat(chunks);
 
